@@ -1,0 +1,10 @@
+C:\Users\brode\source\repos\-\Top-down RTS game\bin\Debug\Top-down RTS game.exe.config
+C:\Users\brode\source\repos\-\Top-down RTS game\bin\Debug\Top-down RTS game.exe
+C:\Users\brode\source\repos\-\Top-down RTS game\bin\Debug\Top-down RTS game.pdb
+C:\Users\brode\source\repos\-\Top-down RTS game\obj\Debug\Top-down RTS game.csprojAssemblyReference.cache
+C:\Users\brode\source\repos\-\Top-down RTS game\obj\Debug\Top_down_RTS_game.Form1.resources
+C:\Users\brode\source\repos\-\Top-down RTS game\obj\Debug\Top_down_RTS_game.Properties.Resources.resources
+C:\Users\brode\source\repos\-\Top-down RTS game\obj\Debug\Top-down RTS game.csproj.GenerateResource.cache
+C:\Users\brode\source\repos\-\Top-down RTS game\obj\Debug\Top-down RTS game.csproj.CoreCompileInputs.cache
+C:\Users\brode\source\repos\-\Top-down RTS game\obj\Debug\Top-down RTS game.exe
+C:\Users\brode\source\repos\-\Top-down RTS game\obj\Debug\Top-down RTS game.pdb
