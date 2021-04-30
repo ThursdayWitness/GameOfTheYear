@@ -17,3 +17,4 @@ C:\GitRepos\GOTY\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\Thi
 C:\GitRepos\GOTY\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\ThisIsTheMF.csproj.GenerateResource.cache
 C:\GitRepos\GOTY\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\ThisIsTheMF.MainMenu.resources
 C:\GitRepos\GOTY\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\ThisIsTheMF.GameWindow.resources
+C:\GitRepos\GOTY\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\ThisIsTheMF.RecruitsWindow.resources

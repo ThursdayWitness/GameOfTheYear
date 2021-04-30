@@ -1,23 +1,42 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace ThisIsTheMF
 {
     public class Student
     {
-        private string Name; //Имена пишем с жизни
+        public readonly string Name; //Имена пишем с жизни
+        private readonly Random _random = new Random();
+        private List<string> studentNames = new()
+        {
+            "Кирилл", "Никита", "Иван", "Алексей" 
+            // Список, ясен пень, ещё будет дополняться
+        };
 
-        private Dictionary<int, string> Stats = new Dictionary<int, string>(5);
+        public List<int> Stats = new(); 
+        //В зависимости от имени, к тем или иным статам
+        //будут дополнительно добавляться/отниматься значения
 
-        public Student(string name, string stats) // Параметры студентов
+        private string GenerateName()
+        {
+            var name = studentNames[_random.Next(0, studentNames.Count - 1)];
+            studentNames.Remove(name);
+            return name;
+        }
+        public Student() // Параметры студентов.
         {
             //Параметры генерируются случайным образом,
-            //но общая сумма их стат не может превышать заданное число.
-            Name = name;
-            Stats.Add(stats[0],"Ум");
-            Stats.Add(stats[1],"Красноречие");
-            Stats.Add(stats[2],"Смекалка");
-            Stats.Add(stats[3],"Дерзость");
-            Stats.Add(stats[4],"Сочувствие");
+            //но общая сумма их стат не может превышать заданное число,
+            //определяемое сложностью игры
+            //пока что числа просто генерируются случайно в диапазоне 1-9
+            //TODO: в дальнейшем сделать возможность создавать собственных студентов?
+            Name = GenerateName();
+            Stats.Add(_random.Next(1,9));//Ум
+            Stats.Add(_random.Next(1,9));//Красноречие
+            Stats.Add(_random.Next(1,9));//Смекалка
+            Stats.Add(_random.Next(1,9));//Дерзость
+            Stats.Add(_random.Next(1,9));//Сочувствие
+            //Надо бы как-то через код подписать эти статы
         }
        
     }
