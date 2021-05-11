@@ -46,6 +46,7 @@
             this.exitButton.Text = "Выход";
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
+            this.exitButton.MouseEnter += new System.EventHandler(this.exitButton_MouseEnter);
             // 
             // startButton
             // 
@@ -91,6 +92,7 @@
             this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
             this.Name = "MainMenu";
             this.Text = "ThisIsTheMathFK";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.trynaToEscape);
             ((System.ComponentModel.ISupportInitialize) (this.titleImage)).EndInit();
             this.ResumeLayout(false);
         }

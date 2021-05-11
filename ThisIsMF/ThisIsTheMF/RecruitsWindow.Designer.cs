@@ -57,12 +57,13 @@ namespace ThisIsTheMF
             this.Recruit.Controls.Add(this.gutsLabel);
             this.Recruit.Controls.Add(this.speakingLabel);
             this.Recruit.Controls.Add(this.proficiencyLabel);
-            this.Recruit.Location = new System.Drawing.Point(12, 12);
+            this.Recruit.Location = new System.Drawing.Point(119, 12);
             this.Recruit.Name = "Recruit";
             this.Recruit.Size = new System.Drawing.Size(125, 219);
             this.Recruit.TabIndex = 0;
             this.Recruit.TabStop = false;
             this.Recruit.Text = "студентнейм";
+            this.Recruit.Visible = false;
             // 
             // kindnessStat
             // 
