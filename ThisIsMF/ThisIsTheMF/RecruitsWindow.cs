@@ -17,6 +17,9 @@ namespace ThisIsTheMF
             //Меню выбора рекрутируемых студентов
             InitializeComponent();
             GenerateStudentBox();
+            pictureBox1.Controls.Add(pictureBox3);
+            pictureBox3.Location = new Point(450, 100);
+            pictureBox3.BackColor = Color.Transparent;
         }
 
         private void GenerateStudentProfile(GroupBox recruitBox)

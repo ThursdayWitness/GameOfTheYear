@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitRepos\\GOTY\\GameOfTheYear\\ThisIsMF\\ThisIsTheMF\\ThisIsTheMF.csproj": {}
+    "C:\\Users\\brodel\\Documents\\GitHub\\GameOfTheYear\\ThisIsMF\\ThisIsTheMF\\ThisIsTheMF.csproj": {}
   },
   "projects": {
-    "C:\\GitRepos\\GOTY\\GameOfTheYear\\ThisIsMF\\ThisIsTheMF\\ThisIsTheMF.csproj": {
+    "C:\\Users\\brodel\\Documents\\GitHub\\GameOfTheYear\\ThisIsMF\\ThisIsTheMF\\ThisIsTheMF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitRepos\\GOTY\\GameOfTheYear\\ThisIsMF\\ThisIsTheMF\\ThisIsTheMF.csproj",
+        "projectUniqueName": "C:\\Users\\brodel\\Documents\\GitHub\\GameOfTheYear\\ThisIsMF\\ThisIsTheMF\\ThisIsTheMF.csproj",
         "projectName": "ThisIsTheMF",
-        "projectPath": "C:\\GitRepos\\GOTY\\GameOfTheYear\\ThisIsMF\\ThisIsTheMF\\ThisIsTheMF.csproj",
-        "packagesPath": "C:\\Users\\lirki\\.nuget\\packages\\",
-        "outputPath": "C:\\GitRepos\\GOTY\\GameOfTheYear\\ThisIsMF\\ThisIsTheMF\\obj\\",
+        "projectPath": "C:\\Users\\brodel\\Documents\\GitHub\\GameOfTheYear\\ThisIsMF\\ThisIsTheMF\\ThisIsTheMF.csproj",
+        "packagesPath": "C:\\Users\\brodel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\brodel\\Documents\\GitHub\\GameOfTheYear\\ThisIsMF\\ThisIsTheMF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lirki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\brodel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0-windows"
+          "net5.0-windows7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -57,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
