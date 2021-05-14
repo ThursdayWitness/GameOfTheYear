@@ -9,18 +9,20 @@ namespace ThisIsTheMF
     public partial class RecruitsWindow : Form
     {
         List<Student> studentsList = new();
-        private int controlsCounter = 0; 
+        private int controlsCounter = 0;
         // инкремент-говно для работы расположения окошек студентов.
         // Может потом поправлю на что-нибудь умное, но пока плевать.
+
+
+
         public RecruitsWindow()
         {
             //Меню выбора рекрутируемых студентов
             InitializeComponent();
             GenerateStudentBox();
-            pictureBox1.Controls.Add(pictureBox3);
-            pictureBox3.Location = new Point(450, 100);
-            pictureBox3.BackColor = Color.Transparent;
         }
+
+
 
         private void GenerateStudentProfile(GroupBox recruitBox)
         {
@@ -52,9 +54,6 @@ namespace ThisIsTheMF
                 var recruitBox = new GroupBox
                 {
                     Name = "recruit" + controlsCounter,
-                    Size = new Size(125,219),
-                    Location = new Point(4 + controlsCounter*125, 44), 
-                    Visible = true
                 };
                 //dynamicbutton.Click += new System.EventHandler(menuItem_Click);
                 //Это полезно стырить, когда сделаем профили студентов кликабельными.

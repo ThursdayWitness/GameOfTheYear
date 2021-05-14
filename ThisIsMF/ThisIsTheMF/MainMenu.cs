@@ -13,6 +13,9 @@ namespace ThisIsTheMF
 {
     public partial class MainMenu : Form
     {
+        public Player player;
+        public Difficulty difficulty;
+
         public MainMenu()
         {
             InitializeComponent();
@@ -25,19 +28,33 @@ namespace ThisIsTheMF
 
         private void trynaToEscape(object sender, FormClosingEventArgs e)
         {
-            if (titleLabel.Text != @"Аве Четверг!")
-            {
-                const string message = "Думаешь, это так просто? Хрена с два";
-                MessageBox.Show(message);
-                e.Cancel = true;
-            }
+            //if (titleLabel.Text != @"Аве Четверг!")
+            //{
+            //    const string message = "Думаешь, это так просто? Хрена с два";
+            //    MessageBox.Show(message);
+            //    e.Cancel = true;
+            //}
+
         }
 
         private void startButton_Click(object sender, EventArgs e)
         {
-            
-            var gameWindow = new GameWindow();
-            gameWindow.Show();
+
+            if (gameCharName.Text is null or "Введите имя персонажа" ||
+                difficultyLevelBox.Text is null or "Выберите сложность") return;
+            player = new Player(gameCharName.Text, 4);
+            //difficulty.level = 10 / int.Parse(difficultyLevelBox.Text); 
+            var recruitsWindow = new RecruitsWindow();
+            recruitsWindow.Show();
+
+            var mapWindow = new Map();
+            mapWindow.ShowDialog();
+
+            //Игрок вводит своё имя и выбирает сложность.
+            //Появляется новое окно со списком доступных для выбора студентов.
+            //Изначально можно выбрать максимум Четверых.
+            //Студенты генерируются случайно.
+            // чем больше уровень сложности, тем меньше значение, тем меньше даётся рекрутов на выбор
         }
 
         private void titleLabel_Click(object sender, EventArgs e)
@@ -51,6 +68,11 @@ namespace ThisIsTheMF
             if(titleLabel.Text != @"Аве Четверг!")
                 exitButton.Location = new Point(new Random().Next(), 
                                                 new Random().Next());
+        }
+
+        private void gameCharName_MouseDown(object sender, MouseEventArgs e)
+        {
+            gameCharName.Clear();
         }
     }
 }
