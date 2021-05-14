@@ -42,6 +42,7 @@ namespace ThisIsTheMF
             this.gutsLabel = new System.Windows.Forms.Label();
             this.speakingLabel = new System.Windows.Forms.Label();
             this.proficiencyLabel = new System.Windows.Forms.Label();
+            this.btnChoose = new System.Windows.Forms.Button();
             this.Recruit.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -167,11 +168,22 @@ namespace ThisIsTheMF
             this.proficiencyLabel.TabIndex = 2;
             this.proficiencyLabel.Text = "Смекалка";
             // 
+            // btnChoose
+            // 
+            this.btnChoose.Location = new System.Drawing.Point(610, 575);
+            this.btnChoose.Name = "btnChoose";
+            this.btnChoose.Size = new System.Drawing.Size(149, 53);
+            this.btnChoose.TabIndex = 1;
+            this.btnChoose.Text = "button1";
+            this.btnChoose.UseVisualStyleBackColor = true;
+            this.btnChoose.Click += new System.EventHandler(this.btnChoose_Click);
+            // 
             // RecruitsWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1423, 692);
+            this.Controls.Add(this.btnChoose);
             this.Controls.Add(this.Recruit);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RecruitsWindow";
@@ -197,5 +209,7 @@ namespace ThisIsTheMF
         private System.Windows.Forms.GroupBox Recruit1;
 
         #endregion
+
+        private System.Windows.Forms.Button btnChoose;
     }
 }

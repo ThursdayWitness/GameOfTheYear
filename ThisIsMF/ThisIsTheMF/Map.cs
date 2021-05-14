@@ -13,6 +13,7 @@ namespace ThisIsTheMF
     public partial class Map : Form
     {
         private string statusEvent = "noone"; // вызов события на карте
+        private readonly Random _random = new Random();
 
         public Map()
         {
@@ -37,13 +38,19 @@ namespace ThisIsTheMF
             //dialogEvent.BackColor = Color.Transparent;
         }
 
-        private void CreateEvent()
-        {
+        private List<string> CreateEvent(List<string> status)
+        { 
+            List<string> listEvents = (new string[] { "matfuck", "socgum", "sok", "ipip" }).ToList();
+            IEnumerable<string> randomEvent = listEvents.OrderBy(x => _random.Next()).Take(4);
+            status = randomEvent.Select(p => status).ToList(); 
+            return status;
             //генерируются события
+            // пока не получается :9
         }
 
         private void dialogEvent_Click(object sender, EventArgs e)
         {
+            CreateEvent(statusEvent);
             switch (statusEvent)
             {
                 case "matfuck":

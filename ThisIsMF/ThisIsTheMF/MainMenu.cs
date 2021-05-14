@@ -47,9 +47,6 @@ namespace ThisIsTheMF
             var recruitsWindow = new RecruitsWindow();
             recruitsWindow.Show();
 
-            var mapWindow = new Map();
-            mapWindow.ShowDialog();
-
             //Игрок вводит своё имя и выбирает сложность.
             //Появляется новое окно со списком доступных для выбора студентов.
             //Изначально можно выбрать максимум Четверых.

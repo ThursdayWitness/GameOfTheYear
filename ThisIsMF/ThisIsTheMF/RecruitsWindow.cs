@@ -64,5 +64,11 @@ namespace ThisIsTheMF
                 GenerateStudentProfile(recruitBox);
             }
         }
+
+        private void btnChoose_Click(object sender, System.EventArgs e)
+        {
+            var mapWindow = new Map();
+            mapWindow.ShowDialog();
+        }
     }
 }
