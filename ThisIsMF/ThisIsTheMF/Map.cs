@@ -12,7 +12,7 @@ namespace ThisIsTheMF
 {
     public partial class Map : Form
     {
-        private string statusEvent = "noone"; // вызов события на карте
+        private List<string> statusEvent = new List<string> { "matfuck", "socgum", "sok", "ipip" }; // вызов события на карте
         private readonly Random _random = new Random();
 
         public Map()
@@ -38,39 +38,51 @@ namespace ThisIsTheMF
             //dialogEvent.BackColor = Color.Transparent;
         }
 
-        private List<string> CreateEvent(List<string> status)
+        private List<string> CreateEvent(List<string> listEvents)
         { 
-            List<string> listEvents = (new string[] { "matfuck", "socgum", "sok", "ipip" }).ToList();
-            IEnumerable<string> randomEvent = listEvents.OrderBy(x => _random.Next()).Take(4);
-            status = randomEvent.Select(p => status).ToList(); 
-            return status;
+            return listEvents.OrderBy(arg => Guid.NewGuid()).Take(1).ToList();
             //генерируются события
             // пока не получается :9
         }
 
         private void dialogEvent_Click(object sender, EventArgs e)
         {
-            CreateEvent(statusEvent);
-            switch (statusEvent)
+            //CreateEvent(statusEvent);
+            //switch (statusEvent)
+            //{
+            //    case statusEvent.Insert.ToString():
+            //        pictureMap.Controls.Add(dialogEvent);
+            //        dialogEvent.Location = new Point(418, 146);
+            //        dialogEvent.BackColor = Color.Transparent;
+            //        break;
+            //    case "socgum":
+            //        pictureMap.Controls.Add(dialogEvent);
+            //        dialogEvent.Location = new Point(564, 92);
+            //        dialogEvent.BackColor = Color.Transparent;
+            //        break;
+            //    case "sok":
+            //        pictureMap.Controls.Add(dialogEvent);
+            //        dialogEvent.Location = new Point(382, 154);
+            //        dialogEvent.BackColor = Color.Transparent;
+            //        break;
+            //    case "ipip":
+            //        pictureMap.Controls.Add(dialogEvent);
+            //        dialogEvent.Location = new Point(547, 500);
+            //        dialogEvent.BackColor = Color.Transparent;
+            //        break;
+            //    default:
+            //        break;
+            //}
+        }
+
+        private void timerEvent_Tick(object sender, EventArgs e)
+        {
+            var events = (PictureBox) sender;
+            switch (events.Name)
             {
-                case "matfuck":
+                case "dialogEvent":
                     pictureMap.Controls.Add(dialogEvent);
                     dialogEvent.Location = new Point(418, 146);
-                    dialogEvent.BackColor = Color.Transparent;
-                    break;
-                case "socgum":
-                    pictureMap.Controls.Add(dialogEvent);
-                    dialogEvent.Location = new Point(564, 92);
-                    dialogEvent.BackColor = Color.Transparent;
-                    break;
-                case "sok":
-                    pictureMap.Controls.Add(dialogEvent);
-                    dialogEvent.Location = new Point(382, 154);
-                    dialogEvent.BackColor = Color.Transparent;
-                    break;
-                case "ipip":
-                    pictureMap.Controls.Add(dialogEvent);
-                    dialogEvent.Location = new Point(547, 500);
                     dialogEvent.BackColor = Color.Transparent;
                     break;
                 default:

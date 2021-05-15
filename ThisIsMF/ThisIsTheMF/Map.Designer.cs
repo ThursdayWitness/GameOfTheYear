@@ -29,17 +29,21 @@ namespace ThisIsTheMF
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Map));
             this.dialogEvent = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSettings = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel = new System.Windows.Forms.Panel();
+            this.panelNews = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panelStudents = new System.Windows.Forms.Panel();
             this.pictureMap = new System.Windows.Forms.PictureBox();
+            this.timerEvent = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dialogEvent)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panelNews.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMap)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +51,7 @@ namespace ThisIsTheMF
             // 
             this.dialogEvent.BackColor = System.Drawing.Color.Transparent;
             this.dialogEvent.Image = ((System.Drawing.Image)(resources.GetObject("dialogEvent.Image")));
-            this.dialogEvent.Location = new System.Drawing.Point(564, 92);
+            this.dialogEvent.Location = new System.Drawing.Point(561, 137);
             this.dialogEvent.Name = "dialogEvent";
             this.dialogEvent.Size = new System.Drawing.Size(160, 160);
             this.dialogEvent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -59,7 +63,7 @@ namespace ThisIsTheMF
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(184)))), ((int)(((byte)(127)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnSettings);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(275, 39);
@@ -67,14 +71,15 @@ namespace ThisIsTheMF
             this.panel1.Size = new System.Drawing.Size(409, 56);
             this.panel1.TabIndex = 9;
             // 
-            // button1
+            // btnSettings
             // 
-            this.button1.Location = new System.Drawing.Point(328, -1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(66, 54);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(184)))), ((int)(((byte)(127)))));
+            this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
+            this.btnSettings.Location = new System.Drawing.Point(361, -1);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(47, 56);
+            this.btnSettings.TabIndex = 2;
+            this.btnSettings.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -96,13 +101,23 @@ namespace ThisIsTheMF
             this.label1.TabIndex = 0;
             this.label1.Text = "Неделя";
             // 
-            // panel
+            // panelNews
             // 
-            this.panel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel.Location = new System.Drawing.Point(1187, 0);
-            this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(236, 719);
-            this.panel.TabIndex = 8;
+            this.panelNews.Controls.Add(this.label3);
+            this.panelNews.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelNews.Location = new System.Drawing.Point(1187, 0);
+            this.panelNews.Name = "panelNews";
+            this.panelNews.Size = new System.Drawing.Size(236, 719);
+            this.panelNews.TabIndex = 8;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(9, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(224, 204);
+            this.label3.TabIndex = 0;
+            this.label3.Text = resources.GetString("label3.Text");
             // 
             // panelStudents
             // 
@@ -123,6 +138,11 @@ namespace ThisIsTheMF
             this.pictureMap.TabIndex = 6;
             this.pictureMap.TabStop = false;
             // 
+            // timerEvent
+            // 
+            this.timerEvent.Interval = 1000;
+            this.timerEvent.Tick += new System.EventHandler(this.timerEvent_Tick);
+            // 
             // Map
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
@@ -130,7 +150,7 @@ namespace ThisIsTheMF
             this.ClientSize = new System.Drawing.Size(1423, 719);
             this.Controls.Add(this.dialogEvent);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel);
+            this.Controls.Add(this.panelNews);
             this.Controls.Add(this.panelStudents);
             this.Controls.Add(this.pictureMap);
             this.Name = "Map";
@@ -138,6 +158,8 @@ namespace ThisIsTheMF
             ((System.ComponentModel.ISupportInitialize)(this.dialogEvent)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panelNews.ResumeLayout(false);
+            this.panelNews.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMap)).EndInit();
             this.ResumeLayout(false);
 
@@ -147,11 +169,13 @@ namespace ThisIsTheMF
 
         private System.Windows.Forms.PictureBox dialogEvent;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel;
+        private System.Windows.Forms.Panel panelNews;
         private System.Windows.Forms.Panel panelStudents;
         private System.Windows.Forms.PictureBox pictureMap;
+        private System.Windows.Forms.Timer timerEvent;
+        private System.Windows.Forms.Label label3;
     }
 }

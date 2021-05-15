@@ -168,6 +168,40 @@
         +H/6hng+xQb4wAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="btnSettings.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAAOsAAADrASts18IAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
+        AAADAklEQVRYR8XXya4NURTG8YuQEMFYNyAhmpGHEDFnQkx4Bu1AE+2QiW5ItI9gqnkBvYiRvhlpEgTf
+        r5x9b91yqu65ci5f8k9q7b1q7V17r93UyF9oVjgeXoSfPTwfCzPDlOtQ0Oin8LSHZ2UHwpTrSfgaFlfW
+        by0Jyh5X1hC0PFwP98OlsDTQivAlvKus8VKmjg9553IQ41oQcyCtCx9CmV+8DjfCj579IDSlTB0fvt6p
+        xxBT7E7pZWn8RJgdTvZsPAx7w8LQ1KKgjk/xPxXmBLHYYneOhKHiKMvr2h42hemV1S0+fL0zTUFPpRNX
+        KqtFZRj1etiaG8S+V1ktknCcDF2998NQmcqLldUimVuSxxD204KwJ9wJr3rcDrvD/NBPO4KYYpcV1SoZ
+        zNk8NrUxvA/q8blHsd+GDaGpzUG92J1aGSwjmTxDQU0a/x7Unw6rQtHqcDao49PshFiPgnptjJO93fZq
+        h/sY9NRyqsuw+3IBtiho0dbAx0g0p2NfEFsb2joYqrPDklNhK7VOfX1znZtzPmcqq1vnAt9dlTUm+4TY
+        2tAWn6OhOskcJhzaJMm8YKgn0prA92Zl9ZezQ+48Z3B+5qFDb4JODirBrY4uaVPbA3XA8hF0ENk/HEov
+        K6tdox0oU2BY2jSZKVgb+HZNgb1gdAokghe+hZKEzXywyfCx1CbS+cB3Z2WNqZ6E2uJzOFRLwU3GZaJt
+        GVpSlpYlZqm1aVvgI2fmKaipvgy1tT/8cYXr2ohsLmUjstRke5Fh9+XqfN36UFfnRtRU11asE0ZCPSQb
+        iu3Lm43TwFvxIIeR6bDJ3AoyHRLOnDeHvWjgw8gdjqOjc5iyNB3xYncex//iQnK3slp0NXByfSrSe0Mo
+        J5qJ2U98zLl36ipXMqPcqualVK/L0EEmW079zg1l6vgUf1MpRv1Suix06r9ey4uMhNurC+SFUDJ3sj8m
+        Ek4Mwz7hlw+q8mtWPzs0ZgMa2q9Zl9xkDKnDpPycelZme51y2b8dYE6yMr+ej4RJ/p6PjPwCJSsZtPbA
+        7uYAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Новость Новость Новость Новость 
+Новость Новость Новость Новость 
+Новость Новость Новость Новость 
+Новость Новость Новость Новость 
+Новость Новость Новость Новость 
+Новость Новость Новость Новость 
+Новость Новость Новость Новость 
+Новость Новость Новость Новость 
+Новость Новость Новость Новость 
+Новость Новость Новость Новость 
+Новость Новость Новость Новость 
+Новость Новость Новость Новость </value>
+  </data>
   <data name="pictureMap.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAEBAQEBAQEBAQEBAQECAgMCAgICAgQDAwIDBQQFBQUEBAQF
@@ -11796,4 +11830,7 @@
         H//Z
 </value>
   </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
+    <value>28</value>
+  </metadata>
 </root>
