@@ -147,7 +147,7 @@ namespace ThisIsTheMF
             this.proficiencyLabel.Name = "proficiencyLabel";
             this.proficiencyLabel.Size = new System.Drawing.Size(100, 23);
             this.proficiencyLabel.TabIndex = 2;
-            this.proficiencyLabel.Text = "Смекалка";
+            this.proficiencyLabel.Text = "Опытность";
             // 
             // recruitStudent
             // 

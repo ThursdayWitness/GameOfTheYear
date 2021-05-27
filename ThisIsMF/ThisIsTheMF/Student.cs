@@ -32,7 +32,7 @@ namespace ThisIsTheMF
             Name = GenerateName();
             Stats.Add(_random.Next(1,9));//Ум
             Stats.Add(_random.Next(1,9));//Красноречие
-            Stats.Add(_random.Next(1,9));//Смекалка
+            Stats.Add(_random.Next(1,9));//Опытность
             Stats.Add(_random.Next(1,9));//Дерзость
             Stats.Add(_random.Next(1,9));//Сочувствие
             //Надо бы как-то через код подписать эти статы

@@ -126,7 +126,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainMenu";
             this.Text = "ThisIsTheMathFK";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.trynaToEscape);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TrynaToEscape);
             ((System.ComponentModel.ISupportInitialize)(this.titleImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
