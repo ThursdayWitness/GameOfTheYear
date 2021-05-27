@@ -18,6 +18,7 @@ namespace ThisIsTheMF
         public Map()
         {
             InitializeComponent();
+            
 
 
             //matfuck
@@ -42,7 +43,8 @@ namespace ThisIsTheMF
         { 
             return listEvents.OrderBy(arg => Guid.NewGuid()).Take(1).ToList();
             //генерируются события
-            // пока не получается :9
+            //пока не получается :9
+            //Понимаю. Поебота та ещё
         }
 
         private void dialogEvent_Click(object sender, EventArgs e)

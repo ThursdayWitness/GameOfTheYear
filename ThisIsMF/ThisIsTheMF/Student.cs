@@ -6,10 +6,10 @@ namespace ThisIsTheMF
     public class Student
     {
         public readonly string Name; //Имена пишем с жизни
-        private readonly Random _random = new Random();
+        private readonly Random _random = new();
         private List<string> studentNames = new()
         {
-            "Кирилл", "Никита", "Иван", "Алексей" 
+            "Кирилл", "Никита", "Иван", "Алексей","Илья-семпай","Анастасия","Григорий","Максим"
             // Список, ясен пень, ещё будет дополняться
         };
 

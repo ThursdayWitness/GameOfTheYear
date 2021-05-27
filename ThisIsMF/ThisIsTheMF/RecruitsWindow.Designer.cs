@@ -31,7 +31,7 @@ namespace ThisIsTheMF
         /// </summary>
         private void InitializeComponent()
         {
-            this.Recruit = new System.Windows.Forms.GroupBox();
+            this.RecruitBox = new System.Windows.Forms.GroupBox();
             this.kindnessStat = new System.Windows.Forms.Label();
             this.gutsStat = new System.Windows.Forms.Label();
             this.proficiencyStat = new System.Windows.Forms.Label();
@@ -42,158 +42,186 @@ namespace ThisIsTheMF
             this.gutsLabel = new System.Windows.Forms.Label();
             this.speakingLabel = new System.Windows.Forms.Label();
             this.proficiencyLabel = new System.Windows.Forms.Label();
-            this.btnChoose = new System.Windows.Forms.Button();
-            this.Recruit.SuspendLayout();
+            this.recruitStudent = new System.Windows.Forms.Button();
+            this.generateStudentButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.recruitsLimit = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.RecruitBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Recruit
+            // RecruitBox
             // 
-            this.Recruit.Controls.Add(this.kindnessStat);
-            this.Recruit.Controls.Add(this.gutsStat);
-            this.Recruit.Controls.Add(this.proficiencyStat);
-            this.Recruit.Controls.Add(this.speakingStat);
-            this.Recruit.Controls.Add(this.knowledgeStat);
-            this.Recruit.Controls.Add(this.kindnessLabel);
-            this.Recruit.Controls.Add(this.knowledgeLabel);
-            this.Recruit.Controls.Add(this.gutsLabel);
-            this.Recruit.Controls.Add(this.speakingLabel);
-            this.Recruit.Controls.Add(this.proficiencyLabel);
-            this.Recruit.Font = new System.Drawing.Font("Montserrat", 16.30189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Recruit.Location = new System.Drawing.Point(13, 13);
-            this.Recruit.Margin = new System.Windows.Forms.Padding(4);
-            this.Recruit.Name = "Recruit";
-            this.Recruit.Padding = new System.Windows.Forms.Padding(4);
-            this.Recruit.Size = new System.Drawing.Size(202, 201);
-            this.Recruit.TabIndex = 0;
-            this.Recruit.TabStop = false;
-            this.Recruit.Text = "студентнейм";
+            this.RecruitBox.Controls.Add(this.kindnessStat);
+            this.RecruitBox.Controls.Add(this.gutsStat);
+            this.RecruitBox.Controls.Add(this.proficiencyStat);
+            this.RecruitBox.Controls.Add(this.speakingStat);
+            this.RecruitBox.Controls.Add(this.knowledgeStat);
+            this.RecruitBox.Controls.Add(this.kindnessLabel);
+            this.RecruitBox.Controls.Add(this.knowledgeLabel);
+            this.RecruitBox.Controls.Add(this.gutsLabel);
+            this.RecruitBox.Controls.Add(this.speakingLabel);
+            this.RecruitBox.Controls.Add(this.proficiencyLabel);
+            this.RecruitBox.Location = new System.Drawing.Point(12, 12);
+            this.RecruitBox.Name = "RecruitBox";
+            this.RecruitBox.Size = new System.Drawing.Size(125, 219);
+            this.RecruitBox.TabIndex = 0;
+            this.RecruitBox.TabStop = false;
+            this.RecruitBox.Text = "студентнейм";
             // 
             // kindnessStat
             // 
-            this.kindnessStat.Font = new System.Drawing.Font("Montserrat", 12.22641F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.kindnessStat.Location = new System.Drawing.Point(156, 154);
-            this.kindnessStat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.kindnessStat.Location = new System.Drawing.Point(95, 193);
             this.kindnessStat.Name = "kindnessStat";
-            this.kindnessStat.Size = new System.Drawing.Size(28, 30);
+            this.kindnessStat.Size = new System.Drawing.Size(24, 23);
             this.kindnessStat.TabIndex = 9;
             this.kindnessStat.Text = "0";
             // 
             // gutsStat
             // 
-            this.gutsStat.Font = new System.Drawing.Font("Montserrat", 12.22641F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.gutsStat.Location = new System.Drawing.Point(156, 124);
-            this.gutsStat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.gutsStat.Location = new System.Drawing.Point(95, 170);
             this.gutsStat.Name = "gutsStat";
-            this.gutsStat.Size = new System.Drawing.Size(28, 30);
+            this.gutsStat.Size = new System.Drawing.Size(24, 23);
             this.gutsStat.TabIndex = 8;
             this.gutsStat.Text = "0";
             // 
             // proficiencyStat
             // 
-            this.proficiencyStat.Font = new System.Drawing.Font("Montserrat", 12.22641F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.proficiencyStat.Location = new System.Drawing.Point(156, 94);
-            this.proficiencyStat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.proficiencyStat.Location = new System.Drawing.Point(95, 147);
             this.proficiencyStat.Name = "proficiencyStat";
-            this.proficiencyStat.Size = new System.Drawing.Size(28, 30);
+            this.proficiencyStat.Size = new System.Drawing.Size(24, 23);
             this.proficiencyStat.TabIndex = 7;
             this.proficiencyStat.Text = "0";
             // 
             // speakingStat
             // 
-            this.speakingStat.Font = new System.Drawing.Font("Montserrat", 12.22641F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.speakingStat.Location = new System.Drawing.Point(156, 64);
-            this.speakingStat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.speakingStat.Location = new System.Drawing.Point(95, 124);
             this.speakingStat.Name = "speakingStat";
-            this.speakingStat.Size = new System.Drawing.Size(28, 30);
+            this.speakingStat.Size = new System.Drawing.Size(24, 23);
             this.speakingStat.TabIndex = 6;
             this.speakingStat.Text = "0";
             // 
             // knowledgeStat
             // 
-            this.knowledgeStat.Font = new System.Drawing.Font("Montserrat", 12.22641F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.knowledgeStat.Location = new System.Drawing.Point(156, 34);
-            this.knowledgeStat.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.knowledgeStat.Location = new System.Drawing.Point(95, 101);
             this.knowledgeStat.Name = "knowledgeStat";
-            this.knowledgeStat.Size = new System.Drawing.Size(28, 30);
+            this.knowledgeStat.Size = new System.Drawing.Size(24, 23);
             this.knowledgeStat.TabIndex = 5;
             this.knowledgeStat.Text = "0";
             // 
             // kindnessLabel
             // 
-            this.kindnessLabel.Font = new System.Drawing.Font("Montserrat", 12.22641F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.kindnessLabel.Location = new System.Drawing.Point(8, 154);
-            this.kindnessLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.kindnessLabel.Location = new System.Drawing.Point(6, 193);
             this.kindnessLabel.Name = "kindnessLabel";
-            this.kindnessLabel.Size = new System.Drawing.Size(117, 30);
+            this.kindnessLabel.Size = new System.Drawing.Size(100, 23);
             this.kindnessLabel.TabIndex = 4;
             this.kindnessLabel.Text = "Сочувствие";
             // 
             // knowledgeLabel
             // 
-            this.knowledgeLabel.Font = new System.Drawing.Font("Montserrat", 12.22641F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.knowledgeLabel.Location = new System.Drawing.Point(8, 34);
-            this.knowledgeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.knowledgeLabel.Location = new System.Drawing.Point(6, 101);
             this.knowledgeLabel.Name = "knowledgeLabel";
-            this.knowledgeLabel.Size = new System.Drawing.Size(140, 30);
+            this.knowledgeLabel.Size = new System.Drawing.Size(100, 23);
             this.knowledgeLabel.TabIndex = 0;
             this.knowledgeLabel.Text = "Ум";
             // 
             // gutsLabel
             // 
-            this.gutsLabel.Font = new System.Drawing.Font("Montserrat", 12.22641F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.gutsLabel.Location = new System.Drawing.Point(8, 124);
-            this.gutsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.gutsLabel.Location = new System.Drawing.Point(6, 170);
             this.gutsLabel.Name = "gutsLabel";
-            this.gutsLabel.Size = new System.Drawing.Size(140, 30);
+            this.gutsLabel.Size = new System.Drawing.Size(100, 23);
             this.gutsLabel.TabIndex = 3;
             this.gutsLabel.Text = "Дерзость";
             // 
             // speakingLabel
             // 
-            this.speakingLabel.Font = new System.Drawing.Font("Montserrat", 12.22641F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.speakingLabel.Location = new System.Drawing.Point(8, 64);
-            this.speakingLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.speakingLabel.Location = new System.Drawing.Point(6, 124);
             this.speakingLabel.Name = "speakingLabel";
-            this.speakingLabel.Size = new System.Drawing.Size(140, 30);
+            this.speakingLabel.Size = new System.Drawing.Size(100, 23);
             this.speakingLabel.TabIndex = 1;
             this.speakingLabel.Text = "Красноречие";
             // 
             // proficiencyLabel
             // 
-            this.proficiencyLabel.Font = new System.Drawing.Font("Montserrat", 12.22641F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.proficiencyLabel.Location = new System.Drawing.Point(8, 94);
-            this.proficiencyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.proficiencyLabel.Location = new System.Drawing.Point(6, 147);
             this.proficiencyLabel.Name = "proficiencyLabel";
-            this.proficiencyLabel.Size = new System.Drawing.Size(140, 30);
+            this.proficiencyLabel.Size = new System.Drawing.Size(100, 23);
             this.proficiencyLabel.TabIndex = 2;
             this.proficiencyLabel.Text = "Смекалка";
             // 
-            // btnChoose
+            // recruitStudent
             // 
-            this.btnChoose.Location = new System.Drawing.Point(610, 575);
-            this.btnChoose.Name = "btnChoose";
-            this.btnChoose.Size = new System.Drawing.Size(149, 53);
-            this.btnChoose.TabIndex = 1;
-            this.btnChoose.Text = "button1";
-            this.btnChoose.UseVisualStyleBackColor = true;
-            this.btnChoose.Click += new System.EventHandler(this.btnChoose_Click);
+            this.recruitStudent.Location = new System.Drawing.Point(156, 108);
+            this.recruitStudent.Name = "recruitStudent";
+            this.recruitStudent.Size = new System.Drawing.Size(83, 23);
+            this.recruitStudent.TabIndex = 1;
+            this.recruitStudent.Text = "Завербовать";
+            this.recruitStudent.UseVisualStyleBackColor = true;
+            this.recruitStudent.Click += new System.EventHandler(this.recruitStudent_Click);
+            // 
+            // generateStudentButton
+            // 
+            this.generateStudentButton.Location = new System.Drawing.Point(156, 194);
+            this.generateStudentButton.Name = "generateStudentButton";
+            this.generateStudentButton.Size = new System.Drawing.Size(83, 34);
+            this.generateStudentButton.TabIndex = 2;
+            this.generateStudentButton.Text = "Несите нового";
+            this.generateStudentButton.UseVisualStyleBackColor = true;
+            this.generateStudentButton.Click += new System.EventHandler(this.generateStudentButton_Click);
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(143, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(104, 19);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Ещё можно взять:";
+            // 
+            // recruitsLimit
+            // 
+            this.recruitsLimit.Location = new System.Drawing.Point(178, 31);
+            this.recruitsLimit.Name = "recruitsLimit";
+            this.recruitsLimit.Size = new System.Drawing.Size(20, 23);
+            this.recruitsLimit.TabIndex = 4;
+            this.recruitsLimit.Text = "4";
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(143, 45);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(104, 36);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Бесполезных куска студента";
             // 
             // RecruitsWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1423, 692);
-            this.Controls.Add(this.btnChoose);
-            this.Controls.Add(this.Recruit);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.ClientSize = new System.Drawing.Size(251, 248);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.recruitsLimit);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.generateStudentButton);
+            this.Controls.Add(this.recruitStudent);
+            this.Controls.Add(this.RecruitBox);
             this.Name = "RecruitsWindow";
             this.Text = "RecruitsWindow";
-            this.Recruit.ResumeLayout(false);
+            this.RecruitBox.ResumeLayout(false);
             this.ResumeLayout(false);
-
         }
 
-        private System.Windows.Forms.GroupBox Recruit;
+        private System.Windows.Forms.Label recruitsLimit;
+
+        private System.Windows.Forms.Label label2;
+
+        private System.Windows.Forms.Label recruitsLimitLabel;
+
+        private System.Windows.Forms.Label label1;
+
+        private System.Windows.Forms.Button generateStudentButton;
+        private System.Windows.Forms.Button recruitStudent;
+
+        private System.Windows.Forms.GroupBox RecruitBox;
 
         private System.Windows.Forms.Label knowledgeStat;
         private System.Windows.Forms.Label speakingStat;
@@ -205,9 +233,6 @@ namespace ThisIsTheMF
         private System.Windows.Forms.Label proficiencyLabel;
         private System.Windows.Forms.Label speakingLabel;
         private System.Windows.Forms.Label knowledgeLabel;
-
-        private System.Windows.Forms.GroupBox Recruit1;
-
         #endregion
 
         private System.Windows.Forms.Button btnChoose;

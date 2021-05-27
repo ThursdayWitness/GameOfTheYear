@@ -40,3 +40,5 @@ C:\Users\brodel\Documents\GitHub\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\ne
 C:\Users\brodel\Documents\GitHub\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\ThisIsTheMF.pdb
 C:\Users\brodel\Documents\GitHub\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\ThisIsTheMF.genruntimeconfig.cache
 C:\Users\brodel\Documents\GitHub\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\ThisIsTheMF.Map.resources
+C:\GitRepos\GOTY\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\ThisIsTheMF.Map.resources
+C:\GitRepos\GOTY\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\ThisIsTheMF.Properties.Resources.resources
