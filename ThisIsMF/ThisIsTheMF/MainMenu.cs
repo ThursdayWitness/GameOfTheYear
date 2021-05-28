@@ -13,8 +13,6 @@ namespace ThisIsTheMF
 {
     public partial class MainMenu : Form
     {
-        public Difficulty Difficulty;
-
         public MainMenu()
         {
             InitializeComponent();
@@ -43,7 +41,7 @@ namespace ThisIsTheMF
             Player.Name = gameCharName.Text;
             //difficulty.level = 10 / int.Parse(difficultyLevelBox.Text); 
             var recruitsWindow = new RecruitsWindow();
-            recruitsWindow.Show();
+            recruitsWindow.ShowDialog();
 
             //Игрок вводит своё имя и выбирает сложность.
             //Появляется новое окно со списком доступных для выбора студентов.
