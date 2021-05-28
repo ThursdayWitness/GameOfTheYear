@@ -2,19 +2,14 @@
 
 namespace ThisIsTheMF
 {
-    public class Player
+    public static class Player
     {
-        public string Name;
-        public List<Student> StudentsList; // Сколько студентов имеется на данный момент в распоряжении
-        public Player(string name)
-        {
-            Name = name;
-            //StudentsList = recruitsLimit;
-        }
-
-        public void CreatePlayerTeam(List<Student> recruits)
-        { 
-            StudentsList = new List<Student>(recruits);
-        }
+        public static string Name;
+        public static List<Student> StudentsList; // Студенты в распоряжении
+        // public Player(string name, List<Student> recruits)
+        // {
+        //     Name = name;
+        //     StudentsList = new List<Student>(recruits);
+        // }
     }
 }
