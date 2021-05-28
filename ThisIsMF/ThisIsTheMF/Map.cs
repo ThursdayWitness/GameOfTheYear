@@ -19,6 +19,7 @@ namespace ThisIsTheMF
         public Map()
         {
             InitializeComponent();
+            
 
             timerStartSession.Enabled = true;
             timer
