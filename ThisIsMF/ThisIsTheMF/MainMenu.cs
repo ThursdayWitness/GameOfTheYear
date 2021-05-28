@@ -13,7 +13,6 @@ namespace ThisIsTheMF
 {
     public partial class MainMenu : Form
     {
-        public Player Player;
         public Difficulty Difficulty;
 
         public MainMenu()
@@ -41,7 +40,7 @@ namespace ThisIsTheMF
 
             if (gameCharName.Text is null or "Введите имя персонажа" ||
                 difficultyLevelBox.Text is null or "Выберите сложность") return;
-            Player = new Player(gameCharName.Text);
+            Player.Name = gameCharName.Text;
             //difficulty.level = 10 / int.Parse(difficultyLevelBox.Text); 
             var recruitsWindow = new RecruitsWindow();
             recruitsWindow.Show();

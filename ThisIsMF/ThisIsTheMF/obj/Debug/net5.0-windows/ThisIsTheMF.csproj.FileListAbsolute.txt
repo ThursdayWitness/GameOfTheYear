@@ -16,7 +16,6 @@ C:\GitRepos\GOTY\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\Thi
 C:\GitRepos\GOTY\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\ThisIsTheMF.genruntimeconfig.cache
 C:\GitRepos\GOTY\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\ThisIsTheMF.csproj.GenerateResource.cache
 C:\GitRepos\GOTY\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\ThisIsTheMF.MainMenu.resources
-C:\GitRepos\GOTY\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\ThisIsTheMF.GameWindow.resources
 C:\GitRepos\GOTY\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\ThisIsTheMF.RecruitsWindow.resources
 C:\Users\brodel\Documents\GitHub\GameOfTheYear\ThisIsMF\ThisIsTheMF\bin\Debug\net5.0-windows\ThisIsTheMF.exe
 C:\Users\brodel\Documents\GitHub\GameOfTheYear\ThisIsMF\ThisIsTheMF\bin\Debug\net5.0-windows\ThisIsTheMF.deps.json
@@ -43,3 +42,4 @@ C:\Users\brodel\Documents\GitHub\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\ne
 C:\Users\brodel\Documents\GitHub\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\ThisIsTheMF.Situation.resources
 C:\GitRepos\GOTY\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\ThisIsTheMF.Map.resources
 C:\GitRepos\GOTY\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\ThisIsTheMF.Properties.Resources.resources
+C:\GitRepos\GOTY\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\ThisIsTheMF.Situation.resources

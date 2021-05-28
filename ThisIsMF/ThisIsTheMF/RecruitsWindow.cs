@@ -10,6 +10,7 @@ namespace ThisIsTheMF
     public partial class RecruitsWindow : Form
     {
         List<Student> studentsList = new();
+        
         public RecruitsWindow()
         {
             //Меню выбора рекрутируемых студентов
@@ -25,7 +26,7 @@ namespace ThisIsTheMF
             recruitsLimit.Text = (int.Parse(recruitsLimit.Text) - 1).ToString();
             if (int.Parse(recruitsLimit.Text) == 0)
             {
-                
+                Player.StudentsList = studentsList;
                 var mapWindow = new Map();
                 mapWindow.ShowDialog();
             }
