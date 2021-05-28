@@ -25,6 +25,7 @@ namespace ThisIsTheMF
             recruitsLimit.Text = (int.Parse(recruitsLimit.Text) - 1).ToString();
             if (int.Parse(recruitsLimit.Text) == 0)
             {
+                
                 var mapWindow = new Map();
                 mapWindow.ShowDialog();
             }

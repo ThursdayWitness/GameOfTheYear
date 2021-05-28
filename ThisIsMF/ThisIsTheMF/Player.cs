@@ -1,20 +1,20 @@
-﻿namespace ThisIsTheMF
+﻿using System.Collections.Generic;
+
+namespace ThisIsTheMF
 {
     public class Player
     {
-        public string Name { get; set; } // Имя игрока
-        public int AvailableStudents; // Сколько студентов имеется на данный момент в распоряжении
-        public Player(string name, int recruitsLimit)
+        public string Name;
+        public List<Student> StudentsList; // Сколько студентов имеется на данный момент в распоряжении
+        public Player(string name)
         {
             Name = name;
-            AvailableStudents = recruitsLimit; /* Пока поставим Четыре доступных студента.
-                                      По ходу игры это число может увеличиваться,
-                                      либо уменьшаться, если со студентами что-то случится.*/
+            //StudentsList = recruitsLimit;
         }
-        
-        public int GetRecruitsLimit()
-        {
-            return AvailableStudents;
+
+        public void CreatePlayerTeam(List<Student> recruits)
+        { 
+            StudentsList = new List<Student>(recruits);
         }
     }
 }

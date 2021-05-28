@@ -12,9 +12,10 @@ namespace ThisIsTheMF
 {
     public partial class Map : Form
     {
-        private static List<string> statusEvent = new List<string> { "matfuck", "socgum", "sok", "ipip" }; // вызов события на карте
-        private static readonly Random _random = new Random();
-        int timeLeft;
+        private static List<string> statusEvent = new() { "matfuck", "socgum", "sok", "ipip" }; // вызов события на карте
+        private static readonly Random _random = new();
+        private int timeLeft;
+        //private readonly studentsList = 
 
         public Map()
         {
@@ -22,8 +23,6 @@ namespace ThisIsTheMF
             
 
             timerStartSession.Enabled = true;
-            timer
-
             //matfuck
             //pictureMap.Controls.Add(dialogEvent);
             //dialogEvent.Location = new Point(418, 146);
@@ -42,7 +41,7 @@ namespace ThisIsTheMF
             //dialogEvent.BackColor = Color.Transparent;
         }
 
-        void CreateEvent(int x, int y)
+        private void CreateEvent(int x, int y)
         {
             pictureMap.Controls.Add(dialogEvent);
             dialogEvent.Location = new Point(x, y);
@@ -55,7 +54,7 @@ namespace ThisIsTheMF
             var index = _random.Next(statusEvent.Count);
             var randomItem = statusEvent[index];
             timerStartSession.Start();
-            if (timerStartSession.Enabled == true)
+            if (timerStartSession.Enabled)
             {
                 switch (randomItem)
                 {
@@ -79,41 +78,36 @@ namespace ThisIsTheMF
                         CreateEvents();
                         CreateEventAsync();
                         break;
-                    default:
-                        break;
                 }
-                timerStartSession.
             }
         }
 
-        static void CreateEvents()
+        private static void CreateEvents()
         {
             var index = _random.Next(statusEvent.Count);
             var randomItem = statusEvent[index];
             switch (randomItem)
             {
                 case "matfuck":
-                    Situation situationMatfuck = new Situation();
+                    var situationMatfuck = new Situation();
                     situationMatfuck.ShowDialog();
                     break;
                 case "socgum":
-                    Situation situationSocgum = new Situation();
+                    var situationSocgum = new Situation();
                     situationSocgum.ShowDialog();
                     break;
                 case "sok":
-                    Situation situationSok = new Situation();
+                    var situationSok = new Situation();
                     situationSok.ShowDialog();
                     break;
                 case "ipip":
-                    Situation situationIpip = new Situation();
+                    var situationIpip = new Situation();
                     situationIpip.ShowDialog();
-                    break;
-                default:
                     break;
             }
         }
 
-        static async void CreateEventAsync()
+        private static async void CreateEventAsync()
         {
             await Task.Delay(10000);
         }
