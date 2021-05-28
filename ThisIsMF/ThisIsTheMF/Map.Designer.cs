@@ -1,5 +1,4 @@
-﻿
-namespace ThisIsTheMF
+﻿namespace ThisIsTheMF
 {
     partial class Map
     {

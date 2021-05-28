@@ -15,35 +15,49 @@ namespace ThisIsTheMF
         private static List<string> statusEvent = new() { "matfuck", "socgum", "sok", "ipip" }; // вызов события на карте
         private static readonly Random _random = new();
         private int timeLeft;
-        //private readonly studentsList = 
 
         public Map()
         {
             InitializeComponent();
+            CenterToScreen(); //TODO: fullscreen mode
             
-            //
-            var studentOne = new Label
+            foreach (var i in Player.StudentsList)
             {
-                Text = Player.StudentsList[0].Name,
-                Location = new Point(10,10),
-            };
-
-            var studentStats = " ";
-            foreach (var j in Player.StudentsList[0].Stats)
-            { 
-                studentStats += j+" ";
+                var statsExplanations = new Label 
+                    //TODO: mouseHover event
+                    //Сделал переменной, чтобы при наведении курсора всплывала подсказка
+                    //с расшифровкой букв в полные названия статов ( Никита, это на тебе, я в конструктор формы не могу зайти xD )
+                {
+                    Name = "statsExplanations",
+                    Location = new Point(144, 0),
+                    Text = "| У | К | Д | С |", //TODO: design overhaul
+                };
+                panelStudents.Controls.Add(statsExplanations);
+                
+                panelStudents.Controls.Add(new Label // Имя студента
+                {
+                    Name = $"student{panelStudents.Controls.Count}", 
+                    Location = new Point(10,16*(panelStudents.Controls.Count+1) + 16),
+                    Text = i.Name,
+                });
+                
+                var studentStats = "| ";
+                foreach (var j in i.Stats) //Присваиваем созданной studentStats статы студента в виде текста
+                { 
+                    studentStats += j+" | ";
+                }
+                
+                panelStudents.Controls.Add(new Label
+                {
+                    Name = $"student{panelStudents.Controls.Count}Stats",  
+                    Location = new Point(144,16*(panelStudents.Controls.Count+1)),
+                    Text = studentStats,// Вертикальная позиция зависит от кол-ва элементов на панели студентов,
+                                        // плюс один, чтобы не подыхать при нуле элементов
+                });
             }
-
-            var studentOneStats = new Label
-            {
-                Text = studentStats,
-                Location = new Point(studentOne.Right),
-                Visible = true
-            };
             
-            Controls.Add(studentOne);
-            Controls.Add(studentOneStats);
             //
+            
             timerStartSession.Enabled = true;
             //matfuck
             //pictureMap.Controls.Add(dialogEvent);
