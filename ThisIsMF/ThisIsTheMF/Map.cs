@@ -21,7 +21,29 @@ namespace ThisIsTheMF
         {
             InitializeComponent();
             
+            //
+            var studentOne = new Label
+            {
+                Text = Player.StudentsList[0].Name,
+                Location = new Point(10,10),
+            };
 
+            var studentStats = " ";
+            foreach (var j in Player.StudentsList[0].Stats)
+            { 
+                studentStats += j+" ";
+            }
+
+            var studentOneStats = new Label
+            {
+                Text = studentStats,
+                Location = new Point(studentOne.Right),
+                Visible = true
+            };
+            
+            Controls.Add(studentOne);
+            Controls.Add(studentOneStats);
+            //
             timerStartSession.Enabled = true;
             //matfuck
             //pictureMap.Controls.Add(dialogEvent);
