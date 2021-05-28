@@ -41,6 +41,7 @@ namespace ThisIsTheMF
             this.panelStudents = new System.Windows.Forms.Panel();
             this.pictureMap = new System.Windows.Forms.PictureBox();
             this.timerEvent = new System.Windows.Forms.Timer(this.components);
+            this.timerStartSession = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dialogEvent)).BeginInit();
             this.panel1.SuspendLayout();
             this.panelNews.SuspendLayout();
@@ -141,7 +142,9 @@ namespace ThisIsTheMF
             // timerEvent
             // 
             this.timerEvent.Interval = 1000;
-            this.timerEvent.Tick += new System.EventHandler(this.timerEvent_Tick);
+            // 
+            // timerStartSession
+            // 
             // 
             // Map
             // 
@@ -177,5 +180,6 @@ namespace ThisIsTheMF
         private System.Windows.Forms.PictureBox pictureMap;
         private System.Windows.Forms.Timer timerEvent;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Timer timerStartSession;
     }
 }
