@@ -37,16 +37,15 @@ namespace ThisIsTheMF
         {
 
             if (gameCharName.Text is null or "Введите имя персонажа" ||
-                difficultyLevelBox.Text is null or "Выберите сложность") return;
+                difficultyLevelBox.Text is null or "Выберите сложность")
+            {
+                MessageBox.Show(Text = "Имя и/или сложность не выбраны", Name = "Ошибка");
+                return;
+            }
             Player.Name = gameCharName.Text;
-            //difficulty.level = 10 / int.Parse(difficultyLevelBox.Text); 
-            var recruitsWindow = new RecruitsWindow();
-            recruitsWindow.ShowDialog();
-
-            //Игрок вводит своё имя и выбирает сложность.
-            //Появляется новое окно со списком доступных для выбора студентов.
-            //Изначально можно выбрать максимум Четверых.
-            //Студенты генерируются случайно.
+            Difficulty.SetLevel(difficultyLevelBox.Text); 
+            new RecruitsWindow().ShowDialog();
+            Close();
         }
 
         private void titleLabel_Click(object sender, EventArgs e)
@@ -58,8 +57,8 @@ namespace ThisIsTheMF
         private void exitButton_MouseEnter(object sender, EventArgs e)
         {
             if(titleLabel.Text != @"Аве Четверг!")
-                exitButton.Location = new Point(new Random().Next(), 
-                                                new Random().Next());
+                exitButton.Location = new Point(new Random().Next(0,250), 
+                                                new Random().Next(0,250));
         }
 
         private void gameCharName_MouseDown(object sender, MouseEventArgs e)
