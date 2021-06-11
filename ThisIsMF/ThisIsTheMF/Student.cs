@@ -7,35 +7,27 @@ namespace ThisIsTheMF
     {
         public readonly string Name; //Имена пишем с жизни
         private readonly Random _random = new();
-        private List<string> studentNames = new()
+        private static readonly List<string> Names = new()
         {
-            "Кирилл", "Никита", "Иван", "Алексей","Илья-семпай","Анастасия","Григорий","Максим"
+            "Кирилл Кориков", "Никита Бродель", "Иван Тян", "Алексей Писклов","Илья-семпай","Анастасия Гребёнкина","Максим Лебедько"
             // Список, ясен пень, ещё будет дополняться
         };
 
-        public List<int> Stats = new(); 
+        public static List<string> _studentNames = Names;
+
+        public readonly List<int> Stats = new(); 
+        //TODO?:
         //В зависимости от имени, к тем или иным статам
         //будут дополнительно добавляться/отниматься значения
 
-        private string GenerateName()
+        public Student() //Параметры студентов.
         {
-            var name = studentNames[_random.Next(0, studentNames.Count - 1)];
-            studentNames.Remove(name);
-            return name;
-        }
-        public Student() // Параметры студентов.
-        {
-            //Параметры генерируются случайным образом,
-            //но общая сумма их стат не может превышать заданное число,
-            //определяемое сложностью игры
-            //пока что числа просто генерируются случайно в диапазоне 1-9
-            Name = GenerateName();
-            Stats.Add(_random.Next(1,9));//Ум
+            //Параметры генерируются случайным образом в диапазоне от 1 до 9.
+            Name = _studentNames[_random.Next(0, Names.Count - 1)];
+            Stats.Add(_random.Next(1,9)); //Ум
             Stats.Add(_random.Next(1,9));//Красноречие
             Stats.Add(_random.Next(1,9));//Дерзость
             Stats.Add(_random.Next(1,9));//Сочувствие
-            //Надо бы как-то через код подписать эти статы
         }
-       
     }
 }
