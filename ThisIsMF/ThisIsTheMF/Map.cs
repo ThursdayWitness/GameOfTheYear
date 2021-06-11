@@ -13,7 +13,7 @@ namespace ThisIsTheMF
     public partial class Map : Form
     {
         private static List<string> statusEvent = new() { "matfuck", "socgum", "sok", "ipip" }; // вызов события на карте
-        private static readonly Random _random = new();
+        private static readonly Random Random = new();
         private int timeLeft;
 
         public Map()
@@ -23,24 +23,20 @@ namespace ThisIsTheMF
             
             foreach (var i in Player.StudentsList)
             {
-                var statsExplanations = new Label 
-                    //TODO: mouseHover event
-                    //Сделал переменной, чтобы при наведении курсора всплывала подсказка
-                    //с расшифровкой букв в полные названия статов ( Никита, это на тебе, я в конструктор формы не могу зайти xD )
+                panelStudents.Controls.Add(new Label
                 {
-                    Name = "statsExplanations",
+                    Name = "UKDS",
                     Location = new Point(144, 0),
-                    Text = "| У | К | Д | С |", //TODO: design overhaul
-                };
-                panelStudents.Controls.Add(statsExplanations);
+                    Text = "| У | К | Д | С |"
+                });
                 
                 panelStudents.Controls.Add(new Label // Имя студента
                 {
-                    Name = $"student{panelStudents.Controls.Count}", 
+                    //Name = $"student{panelStudents.Controls.Count}", 
                     Location = new Point(10,16*(panelStudents.Controls.Count+1) + 16),
                     Text = i.Name,
                 });
-                
+
                 var studentStats = "| ";
                 foreach (var j in i.Stats) //Присваиваем созданной studentStats статы студента в виде текста
                 { 
@@ -49,14 +45,25 @@ namespace ThisIsTheMF
                 
                 panelStudents.Controls.Add(new Label
                 {
-                    Name = $"student{panelStudents.Controls.Count}Stats",  
+                    Name = $"student{panelStudents.Controls.Count/2}Stats",  
                     Location = new Point(144,16*(panelStudents.Controls.Count+1)),
                     Text = studentStats,// Вертикальная позиция зависит от кол-ва элементов на панели студентов,
                                         // плюс один, чтобы не подыхать при нуле элементов
                 });
             }
             
-            //
+            panelStudents.Controls.Add(new Label
+            {
+                Name = "statsExplanations",
+                Text = "Ум - способность студента справиться с заданиями по теме предмета.\n" +
+                       "Красноречие - шанс избежать негативных последствий при провале.\n" +
+                       "Дерзость - \n" +
+                       "Сочувствие - помощник может добавить половину соответствующей \n" +
+                       "характеристики в соответствии с требованиями миссии",
+                AutoSize = true,
+                Location = new Point(0,panelStudents.Bottom)
+                //Понятия не имею, как поставить её нормально
+            });
             
             timerStartSession.Enabled = true;
             //matfuck
@@ -87,7 +94,7 @@ namespace ThisIsTheMF
         private void dialogEvent_Click(object sender, EventArgs e)
         {
             timerStartSession.Enabled = true;
-            var index = _random.Next(statusEvent.Count);
+            var index = Random.Next(statusEvent.Count);
             var randomItem = statusEvent[index];
             timerStartSession.Start();
             if (timerStartSession.Enabled)
@@ -120,13 +127,14 @@ namespace ThisIsTheMF
 
         private static void CreateEvents()
         {
-            var index = _random.Next(statusEvent.Count);
+            var index = Random.Next(statusEvent.Count);
             var randomItem = statusEvent[index];
             switch (randomItem)
             {
                 case "matfuck":
                     var situationMatfuck = new Situation();
-                    situationMatfuck.ShowDialog();
+                    situationMatfuck.ShowDialog(); // Возможно есть смысл здесь и далее заменить это на Show(),
+                                                   // если будет необходимость смотреть кликабельную инфу с Map.
                     break;
                 case "socgum":
                     var situationSocgum = new Situation();
