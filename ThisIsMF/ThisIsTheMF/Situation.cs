@@ -12,6 +12,13 @@ namespace ThisIsTheMF
 {
     public partial class Situation : Form
     {
+        public Tuple<int,string> requiredStat; //Значение статы, Название статы
+        //Крч, идея такова:
+        //У каждой миссии есть стата, которую нужно удовлетворить
+        //( Стата студента не меньше требуемой )
+        //Проверяем это, в зависимости от результата происходит что-либо
+        //Фишки статов расписал в Map.cs
+        
         public Situation()
         {
             InitializeComponent();
