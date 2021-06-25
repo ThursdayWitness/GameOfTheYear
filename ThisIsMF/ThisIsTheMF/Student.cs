@@ -23,11 +23,19 @@ namespace ThisIsTheMF
         public Student() //Параметры студентов.
         {
             //Параметры генерируются случайным образом в диапазоне от 1 до 9.
-            Name = _studentNames[_random.Next(0, Names.Count - 1)];
-            Stats.Add(_random.Next(1,9)); //Ум
-            Stats.Add(_random.Next(1,9));//Красноречие
-            Stats.Add(_random.Next(1,9));//Дерзость
-            Stats.Add(_random.Next(1,9));//Сочувствие
+            try
+            {
+                Name = _studentNames[_random.Next(0, Names.Count - 1)];
+                Stats.Add(_random.Next(1, 9)); //Ум
+                Stats.Add(_random.Next(1, 9));//Красноречие
+                Stats.Add(_random.Next(1, 9));//Дерзость
+                Stats.Add(_random.Next(1, 9));//Сочувствие
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                
+            }
+
         }
     }
 }

@@ -171,7 +171,7 @@
   <data name="btnSettings.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        5gAAAOYBIly6UQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAMCSURBVFhHxdfJ
+        4wAAAOMBD+bfpwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAMCSURBVFhHxdfJ
         rg1RFMbxi5AQwVg3ICGakYcQMWdCTHgG7UAT7ZCJbki0j2CqeQG9iJG+GWkSBN+vnH1v3XKq7rlyLl/y
         T2rtvWrtXXuv3dTIX2hWOB5ehJ89PB8LM8OU61DQ6KfwtIdnZQfClOtJ+BoWV9ZvLQnKHlfWELQ8XA/3
         w6WwNNCK8CW8q6zxUqaOD3nnchDjWhBzIK0LH0KZX7wON8KPnv0gNKVMHR++3qnHEFPsTullafxEmB1O
@@ -187,20 +187,6 @@
         OzRmAxrar1mX3GQMqcOk/Jx6VmZ7nXLZvx1gTrIyv56PhEn+no+M/AIlKxm09sDu5gAAAABJRU5ErkJg
         gg==
 </value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Новость Новость Новость Новость 
-Новость Новость Новость Новость 
-Новость Новость Новость Новость 
-Новость Новость Новость Новость 
-Новость Новость Новость Новость 
-Новость Новость Новость Новость 
-Новость Новость Новость Новость 
-Новость Новость Новость Новость 
-Новость Новость Новость Новость 
-Новость Новость Новость Новость 
-Новость Новость Новость Новость 
-Новость Новость Новость Новость </value>
   </data>
   <data name="pictureMap.Image" type="System.Drawing.Bitmap, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

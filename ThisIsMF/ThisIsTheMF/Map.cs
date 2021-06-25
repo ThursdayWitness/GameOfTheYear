@@ -20,7 +20,8 @@ namespace ThisIsTheMF
         {
             InitializeComponent();
             CenterToScreen(); //TODO: fullscreen mode
-            
+            timerEvent.Start();
+
             foreach (var i in Player.StudentsList)
             {
                 panelStudents.Controls.Add(new Label
@@ -152,6 +153,28 @@ namespace ThisIsTheMF
         private static async void CreateEventAsync()
         {
             await Task.Delay(10000);
+        }
+
+        string text = "Ивашко заебал Ивашко заебал           Ивашко заебал           Ивашко сайпал";
+        private void timerEvent_Tick(object sender, EventArgs e)
+        {
+            text = text.Substring(1) + text[0];
+            textBox1.Text = text;
+        }
+
+        private void Map_Load(object sender, EventArgs e)
+        {
+            pictureMap.Controls.Add(dialogEvent);
+            dialogEvent.Location = new Point(418, 146);
+            dialogEvent.BackColor = Color.Transparent;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (flowLayoutPanel1.Visible == true)
+                flowLayoutPanel1.Visible = false;
+            else
+                flowLayoutPanel1.Visible = true;
         }
     }
 }
