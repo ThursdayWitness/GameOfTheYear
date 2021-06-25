@@ -41,9 +41,11 @@
             this.pictureMap = new System.Windows.Forms.PictureBox();
             this.timerEvent = new System.Windows.Forms.Timer(this.components);
             this.timerStartSession = new System.Windows.Forms.Timer(this.components);
+            this.txtHelpStats = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dialogEvent)).BeginInit();
             this.panel1.SuspendLayout();
             this.panelNews.SuspendLayout();
+            this.panelStudents.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMap)).BeginInit();
             this.SuspendLayout();
             // 
@@ -121,6 +123,7 @@
             // 
             // panelStudents
             // 
+            this.panelStudents.Controls.Add(this.txtHelpStats);
             this.panelStudents.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelStudents.Location = new System.Drawing.Point(0, 0);
             this.panelStudents.Name = "panelStudents";
@@ -142,8 +145,14 @@
             // 
             this.timerEvent.Interval = 1000;
             // 
-            // timerStartSession
+            // txtHelpStats
             // 
+            this.txtHelpStats.AutoSize = true;
+            this.txtHelpStats.Location = new System.Drawing.Point(66, 320);
+            this.txtHelpStats.Name = "txtHelpStats";
+            this.txtHelpStats.Size = new System.Drawing.Size(43, 17);
+            this.txtHelpStats.TabIndex = 0;
+            this.txtHelpStats.Text = "label4";
             // 
             // Map
             // 
@@ -155,6 +164,7 @@
             this.Controls.Add(this.panelNews);
             this.Controls.Add(this.panelStudents);
             this.Controls.Add(this.pictureMap);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Map";
             this.Text = "Map";
             ((System.ComponentModel.ISupportInitialize)(this.dialogEvent)).EndInit();
@@ -162,6 +172,8 @@
             this.panel1.PerformLayout();
             this.panelNews.ResumeLayout(false);
             this.panelNews.PerformLayout();
+            this.panelStudents.ResumeLayout(false);
+            this.panelStudents.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMap)).EndInit();
             this.ResumeLayout(false);
 
@@ -180,5 +192,6 @@
         private System.Windows.Forms.Timer timerEvent;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Timer timerStartSession;
+        private System.Windows.Forms.Label txtHelpStats;
     }
 }

@@ -48,6 +48,7 @@ namespace ThisIsTheMF
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 378);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Situation";
             this.Text = "Situation";
             this.ResumeLayout(false);

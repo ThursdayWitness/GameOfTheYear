@@ -88,6 +88,7 @@
             // 
             // difficultyLevelBox
             // 
+            this.difficultyLevelBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.difficultyLevelBox.FormattingEnabled = true;
             this.difficultyLevelBox.Items.AddRange(new object[] {
             "Легко",
@@ -98,7 +99,6 @@
             this.difficultyLevelBox.Name = "difficultyLevelBox";
             this.difficultyLevelBox.Size = new System.Drawing.Size(153, 25);
             this.difficultyLevelBox.TabIndex = 5;
-            this.difficultyLevelBox.Text = "Выберите сложность";
             // 
             // gameCharName
             // 
