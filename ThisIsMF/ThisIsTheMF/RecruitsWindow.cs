@@ -7,6 +7,7 @@ namespace ThisIsTheMF
 {
     public partial class RecruitsWindow : Form
     {
+        public static readonly Map Map = new();
         public readonly List<Student> StudentsList = new();
         private Student _currentStudent;
         public RecruitsWindow()
@@ -18,12 +19,12 @@ namespace ThisIsTheMF
         private void recruitStudent_Click(object sender, EventArgs e)
         {
             StudentsList.Add(_currentStudent);
-            Student._studentNames.Remove(_currentStudent.Name);
+            Student.StudentNames.Remove(_currentStudent.Name);
             recruitsLimit.Text = (int.Parse(recruitsLimit.Text)-1).ToString();
             if (int.Parse(recruitsLimit.Text) == 0)
             {
                 Player.StudentsList = StudentsList;
-                new Map().ShowDialog();
+                Map.ShowDialog();
                 Close();
             }
             GenerateStudent();
