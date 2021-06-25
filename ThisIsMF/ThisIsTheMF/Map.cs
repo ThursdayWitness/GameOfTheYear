@@ -158,7 +158,7 @@ namespace ThisIsTheMF
         string text = "Ивашко заебал Ивашко заебал           Ивашко заебал           Ивашко сайпал";
         private void timerEvent_Tick(object sender, EventArgs e)
         {
-            text = text.Substring(1) + text[0];
+            text = text.Substring(3) + text[0];
             textBox1.Text = text;
         }
 

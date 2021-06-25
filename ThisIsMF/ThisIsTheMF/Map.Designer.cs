@@ -36,9 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelNews = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panelStudents = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
@@ -49,7 +47,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.txtHelpStats = new System.Windows.Forms.Label();
             this.pictureMap = new System.Windows.Forms.PictureBox();
             this.timerEvent = new System.Windows.Forms.Timer(this.components);
             this.timerStartSession = new System.Windows.Forms.Timer(this.components);
@@ -117,21 +114,12 @@
             // 
             // panelNews
             // 
-            this.panelNews.Controls.Add(this.textBox2);
             this.panelNews.Controls.Add(this.textBox1);
-            this.panelNews.Controls.Add(this.label3);
             this.panelNews.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelNews.Location = new System.Drawing.Point(1239, 0);
             this.panelNews.Name = "panelNews";
             this.panelNews.Size = new System.Drawing.Size(249, 743);
             this.panelNews.TabIndex = 8;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(0, 303);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(101, 25);
-            this.textBox2.TabIndex = 0;
             // 
             // textBox1
             // 
@@ -143,20 +131,10 @@
             this.textBox1.TabIndex = 1;
             this.textBox1.TabStop = false;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(59, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(103, 17);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Ивашко заебал";
-            // 
             // panelStudents
             // 
             this.panelStudents.Controls.Add(this.flowLayoutPanel1);
             this.panelStudents.Controls.Add(this.button1);
-            this.panelStudents.Controls.Add(this.txtHelpStats);
             this.panelStudents.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelStudents.Location = new System.Drawing.Point(0, 0);
             this.panelStudents.Name = "panelStudents";
@@ -257,17 +235,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // txtHelpStats
-            // 
-            this.txtHelpStats.AutoSize = true;
-            this.txtHelpStats.Font = new System.Drawing.Font("Montserrat", 8.150943F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtHelpStats.Location = new System.Drawing.Point(12, 86);
-            this.txtHelpStats.Name = "txtHelpStats";
-            this.txtHelpStats.Size = new System.Drawing.Size(271, 64);
-            this.txtHelpStats.TabIndex = 0;
-            this.txtHelpStats.Text = "Ум - способность студента справиться с\r\nзаданиями о теме предмета.\r\nКрасноречие -" +
-    " шанс избежать негативных\r\nпоследствий при провале.\r\n";
-            // 
             // pictureMap
             // 
             this.pictureMap.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -304,7 +271,6 @@
             this.panelNews.ResumeLayout(false);
             this.panelNews.PerformLayout();
             this.panelStudents.ResumeLayout(false);
-            this.panelStudents.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMap)).EndInit();
@@ -323,10 +289,8 @@
         private System.Windows.Forms.Panel panelStudents;
         private System.Windows.Forms.PictureBox pictureMap;
         private System.Windows.Forms.Timer timerEvent;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Timer timerStartSession;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label4;
@@ -336,6 +300,5 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label txtHelpStats;
     }
 }
