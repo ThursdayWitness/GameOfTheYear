@@ -39,7 +39,7 @@ namespace ThisIsTheMF
             if (gameCharName.Text is null or "Введите имя персонажа" ||
                 difficultyLevelBox.Text is null or "Выберите сложность")
             {
-                MessageBox.Show(Text = "Имя и/или сложность не выбраны", Name = "Ошибка");
+                MessageBox.Show("Имя и/или сложность не выбраны", "Ошибка");
                 return;
             }
             Player.Name = gameCharName.Text;
