@@ -9,11 +9,16 @@ namespace ThisIsTheMF
         private readonly Random _random = new();
         private static readonly List<string> Names = new()
         {
-            "Кирилл Кориков", "Никита Бродель", "Иван Тян","Илья-семпай"
+            "Кирилл Кориков", "Никита Бродель", "Иван Тян",
+            "Илья-семпай", "Дима Милютин", "Евгений Сапов",
+            "Наталья Хабибулаева", "Даниил Матвеев", "Влад Нетёсов",
+            "Александр Кормич", "Никита Гуничев", "Максим Лебедько",
+            "Александр Юдин", "Ян Мухаметов", "Никита Попов", 
+            "Денис Топычканов", "Злата Перминова", "Илья Соболев"
             // Список, ясен пень, ещё будет дополняться
         };
 
-        public static List<string> _studentNames = Names;
+        public static readonly List<string> StudentNames = Names;
 
         public readonly List<int> Stats = new(); 
         //TODO?:
@@ -25,7 +30,7 @@ namespace ThisIsTheMF
             //Параметры генерируются случайным образом в диапазоне от 1 до 9.
             try
             {
-                Name = _studentNames[_random.Next(0, Names.Count - 1)];
+                Name = StudentNames[_random.Next(0, Names.Count - 1)];
                 Stats.Add(_random.Next(1, 9)); //Ум
                 Stats.Add(_random.Next(1, 9));//Красноречие
                 Stats.Add(_random.Next(1, 9));//Дерзость
