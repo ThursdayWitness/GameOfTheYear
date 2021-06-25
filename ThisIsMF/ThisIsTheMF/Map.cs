@@ -14,32 +14,43 @@ namespace ThisIsTheMF
     {
         private static readonly List<string> StatusEvent = new() { "matfuck", "socgum", "sok", "ipip" }; // вызов события на карте
         private static readonly Random Random = new();
-        private int _timeLeft;
 
+        private static readonly Label LivesLabel = new()
+        {
+            Text = Player.Lives.ToString(),
+            Location = new Point(0, 244),
+            Visible = false
+        };
+
+        public static void UpdateLabel()
+        {
+            LivesLabel.Text = Player.Lives.ToString();
+        }
+        
         public Map()
         {
             InitializeComponent();
             CenterToScreen(); //TODO: fullscreen mode
             timerEvent.Start();
 
+            panelStudents.Controls.Add(new Label
+            {
+                Name = "UKDS",
+                Location = new Point(144, 0),
+                Text = "| У | К | Д | С |"
+            });
+            
             foreach (var i in Player.StudentsList)
             {
-                panelStudents.Controls.Add(new Label
-                {
-                    Name = "UKDS",
-                    Location = new Point(144, 0),
-                    Text = "| У | К | Д | С |"
-                });
-                
                 panelStudents.Controls.Add(new Label // Имя студента
                 {
-                    //Name = $"student{panelStudents.Controls.Count}", 
                     Location = new Point(10,16*(panelStudents.Controls.Count+1) + 16),
                     Text = i.Name,
                 });
 
                 var studentStats = "| ";
-                foreach (var j in i.Stats) //Присваиваем созданной studentStats статы студента в виде текста
+                foreach (var j in i.Stats) 
+                    // Присваиваем созданной studentStats статы студента в виде текста
                 { 
                     studentStats += j+" | ";
                 }
@@ -52,7 +63,6 @@ namespace ThisIsTheMF
                                         // плюс один, чтобы не подыхать при нуле элементов
                 });
             }
-            
             panelStudents.Controls.Add(new Label
             {
                 Name = "statsExplanations",
@@ -83,6 +93,7 @@ namespace ThisIsTheMF
             //pictureMap.Controls.Add(dialogEvent);
             //dialogEvent.Location = new Point(547, 500);
             //dialogEvent.BackColor = Color.Transparent;
+            panelStudents.Controls.Add(LivesLabel);
         }
 
         private void CreateEvent(int x, int y)
@@ -132,20 +143,20 @@ namespace ThisIsTheMF
             {
                 case "matfuck":
                     var situationMatfuck = new Situation();
-                    situationMatfuck.ShowDialog(); // Возможно есть смысл здесь и далее заменить это на Show(),
+                        //situationMatfuck.Begin(); // Возможно есть смысл здесь и далее заменить это на Show(),
                                                    // если будет необходимость смотреть кликабельную инфу с Map.
                     break;
                 case "socgum":
                     var situationSocgum = new Situation();
-                    situationSocgum.ShowDialog();
+                    //situationSocgum.Begin();
                     break;
                 case "sok":
                     var situationSok = new Situation();
-                    situationSok.ShowDialog();
+                    //situationSok.Begin();
                     break;
                 case "ipip":
                     var situationIpip = new Situation();
-                    situationIpip.ShowDialog();
+                    //situationIpip.Begin();
                     break;
             }
         }
@@ -155,11 +166,11 @@ namespace ThisIsTheMF
             await Task.Delay(10000);
         }
 
-        string text = "Ивашко заебал Ивашко заебал           Ивашко заебал           Ивашко сайпал";
+        //string text = "Ивашко заебал Ивашко заебал           Ивашко заебал           Ивашко сайпал";
         private void timerEvent_Tick(object sender, EventArgs e)
         {
-            text = text.Substring(3) + text[0];
-            textBox1.Text = text;
+            //text = text.Substring(3) + text[0];
+            //textBox1.Text = text;
         }
 
         private void Map_Load(object sender, EventArgs e)
@@ -171,10 +182,7 @@ namespace ThisIsTheMF
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (flowLayoutPanel1.Visible == true)
-                flowLayoutPanel1.Visible = false;
-            else
-                flowLayoutPanel1.Visible = true;
+            flowLayoutPanel1.Visible = !flowLayoutPanel1.Visible;
         }
     }
 }
