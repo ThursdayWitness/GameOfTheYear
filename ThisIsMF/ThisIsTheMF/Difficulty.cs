@@ -8,22 +8,15 @@ namespace ThisIsTheMF
     public static class Difficulty
     {
         public static int Level { get; private set; }
-        private static readonly Dictionary<int, string> Levels = new()
-        {
-            [1] = "Легко",
-            [2] = "Ничё так",
-            [3] = "Сложно"
-        };
+        private static readonly string[] Levels =
+        {"Сложно", "Ничё так", "Легко"};
         
         public static void SetLevel(string text)
         {
-            foreach (var (key, value) in Levels)
+            for (var i = 0; i < Levels.Length; i++)
             {
-                if (value == text) Level = key;
+                if (Levels[i] == text) Level = i;
             }
-            //Level = Levels.Where(t => t.Key == text).Take(1).Select(t => t.Value);
-            //Это было бы потрясно сделать с помощью LINQ, но пока не могу это сделать.
         }
-        
     }
 }
