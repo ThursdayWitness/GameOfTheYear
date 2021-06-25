@@ -12,9 +12,9 @@ namespace ThisIsTheMF
 {
     public partial class Map : Form
     {
-        private static List<string> statusEvent = new() { "matfuck", "socgum", "sok", "ipip" }; // вызов события на карте
+        private static readonly List<string> StatusEvent = new() { "matfuck", "socgum", "sok", "ipip" }; // вызов события на карте
         private static readonly Random Random = new();
-        private int timeLeft;
+        private int _timeLeft;
 
         public Map()
         {
@@ -94,41 +94,39 @@ namespace ThisIsTheMF
         private void dialogEvent_Click(object sender, EventArgs e)
         {
             timerStartSession.Enabled = true;
-            var index = Random.Next(statusEvent.Count);
-            var randomItem = statusEvent[index];
+            var index = Random.Next(StatusEvent.Count);
+            var randomItem = StatusEvent[index];
             timerStartSession.Start();
-            if (timerStartSession.Enabled)
+            if (!timerStartSession.Enabled) return;
+            switch (randomItem)
             {
-                switch (randomItem)
-                {
-                    case "matfuck":
-                        CreateEvent(418, 146);
-                        CreateEvents();
-                        CreateEventAsync();
-                        break;
-                    case "socgum":
-                        CreateEvent(564, 92);
-                        CreateEvents();
-                        CreateEventAsync();
-                        break;
-                    case "sok":
-                        CreateEvent(382, 154);
-                        CreateEvents();
-                        CreateEventAsync();
-                        break;
-                    case "ipip":
-                        CreateEvent(547, 500);
-                        CreateEvents();
-                        CreateEventAsync();
-                        break;
-                }
+                case "matfuck":
+                    CreateEvent(418, 146);
+                    CreateEvents();
+                    CreateEventAsync();
+                    break;
+                case "socgum":
+                    CreateEvent(564, 92);
+                    CreateEvents();
+                    CreateEventAsync();
+                    break;
+                case "sok":
+                    CreateEvent(382, 154);
+                    CreateEvents();
+                    CreateEventAsync();
+                    break;
+                case "ipip":
+                    CreateEvent(547, 500);
+                    CreateEvents();
+                    CreateEventAsync();
+                    break;
             }
         }
 
         private static void CreateEvents()
         {
-            var index = Random.Next(statusEvent.Count);
-            var randomItem = statusEvent[index];
+            var index = Random.Next(StatusEvent.Count);
+            var randomItem = StatusEvent[index];
             switch (randomItem)
             {
                 case "matfuck":
