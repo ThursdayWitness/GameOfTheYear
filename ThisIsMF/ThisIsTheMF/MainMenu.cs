@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ namespace ThisIsTheMF
 {
     public partial class MainMenu : Form
     {
+        private static readonly RecruitsWindow RecruitsWindow = new();
         public MainMenu()
         {
             InitializeComponent();
@@ -20,7 +22,8 @@ namespace ThisIsTheMF
 
         private void exitButton_Click(object sender, EventArgs e)
         {
-            Close();
+            if(titleLabel.Text == @"Аве Четверг!")
+                Close();
         }
 
         private void TrynaToEscape(object sender, FormClosingEventArgs e)
@@ -36,15 +39,20 @@ namespace ThisIsTheMF
         private void startButton_Click(object sender, EventArgs e)
         {
 
-            if (gameCharName.Text is null or "Введите имя персонажа" ||
-                difficultyLevelBox.Text is null or "Выберите сложность")
+            if (gameCharName.Text is null or "Введите имя игрока" or "")
             {
-                MessageBox.Show("Имя и/или сложность не выбраны", "Ошибка");
+                MessageBox.Show("Имя игрока не выбрано", "Ты кто");
+                return;
+            }
+
+            if (difficultyLevelBox.SelectedItem is null or "Выберите сложность")
+            {
+                MessageBox.Show("Сложность не выбрана", "Легко не будет, не надейся");
                 return;
             }
             Player.Name = gameCharName.Text;
-            Difficulty.SetLevel(difficultyLevelBox.Text); 
-            new RecruitsWindow().ShowDialog();
+            Difficulty.SetLevel(difficultyLevelBox.SelectedItem.ToString()); 
+            RecruitsWindow.ShowDialog();
             Close();
         }
 
@@ -64,6 +72,12 @@ namespace ThisIsTheMF
         private void gameCharName_MouseDown(object sender, MouseEventArgs e)
         {
             gameCharName.Clear();
+        }
+
+        public static void GameOver()
+        {
+            RecruitsWindow.Close();
+            RecruitsWindow.Map.Close();
         }
     }
 }
