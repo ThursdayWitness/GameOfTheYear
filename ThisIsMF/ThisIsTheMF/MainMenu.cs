@@ -14,7 +14,7 @@ namespace ThisIsTheMF
 {
     public partial class MainMenu : Form
     {
-        private static readonly RecruitsWindow RecruitsWindow = new();
+        public static readonly RecruitsWindow RecruitsWindow = new();
         public MainMenu()
         {
             InitializeComponent();
@@ -51,8 +51,8 @@ namespace ThisIsTheMF
             }
             Player.Name = gameCharName.Text;
             Difficulty.SetLevel(difficultyLevelBox.SelectedItem.ToString()); 
-            RecruitsWindow.ShowDialog();
-            Close();
+            RecruitsWindow.Show();
+            //Close();
         }
 
         private void titleLabel_Click(object sender, EventArgs e)
@@ -73,16 +73,10 @@ namespace ThisIsTheMF
             gameCharName.Clear();
         }
 
-        public static void GameOver()
-        {
-            RecruitsWindow.Close();
-            RecruitsWindow.Map.Close();
-        }
-
         private void helpButton_Click(object sender, EventArgs e)
         {
-            HelpForm helpForm = new HelpForm();
-            helpForm.ShowDialog();
+            var helpForm = new HelpForm();
+            helpForm.Show();
         }
     }
 }

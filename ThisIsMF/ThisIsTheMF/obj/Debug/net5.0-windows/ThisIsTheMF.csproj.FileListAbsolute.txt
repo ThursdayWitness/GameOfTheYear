@@ -43,3 +43,4 @@ C:\GitRepos\GOTY\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\Thi
 C:\GitRepos\GOTY\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\ThisIsTheMF.Properties.Resources.resources
 C:\GitRepos\GOTY\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\ThisIsTheMF.Situation.resources
 C:\Users\brodel\Documents\GitHub\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\ThisIsTheMF.HelpForm.resources
+C:\GitRepos\GOTY\GameOfTheYear\ThisIsMF\ThisIsTheMF\obj\Debug\net5.0-windows\ThisIsTheMF.HelpForm.resources

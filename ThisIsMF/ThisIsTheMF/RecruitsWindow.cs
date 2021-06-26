@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace ThisIsTheMF
@@ -8,7 +7,7 @@ namespace ThisIsTheMF
     public partial class RecruitsWindow : Form
     {
         public static readonly Map Map = new();
-        public readonly List<Student> StudentsList = new();
+        private readonly List<Student> StudentsList = new();
         private Student _currentStudent;
         public RecruitsWindow()
         {
