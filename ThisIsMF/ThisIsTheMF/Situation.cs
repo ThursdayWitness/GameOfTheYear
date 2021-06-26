@@ -50,7 +50,7 @@ namespace ThisIsTheMF
             MainStudentLabel.Text = "Основной студент";
             MainStudentLabel.Location = new Point(MainStudentLabel.Width/2,318-MainStudentLabel.Height*2);
             MainStudentBox.Location = new Point(MainStudentLabel.Width/2,MainStudentLabel.Bottom);
-            
+            SendTroops.Location = new Point(MainStudentBox.Right+SendTroops.Width,MainStudentLabel.Bottom);
             //Насрать на помощников, долго, нудно, забагованно. Мб потом.
             //HelperLabel.Text = "Студент-помощник";
             //HelperLabel.Location = new Point(MainStudentBox.Right, MainStudentLabel.Bottom);
