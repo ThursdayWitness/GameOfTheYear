@@ -38,7 +38,6 @@ namespace ThisIsTheMF
 
         private void startButton_Click(object sender, EventArgs e)
         {
-
             if (gameCharName.Text is null or "Введите имя игрока" or "")
             {
                 MessageBox.Show("Имя игрока не выбрано", "Ты кто");
@@ -78,6 +77,12 @@ namespace ThisIsTheMF
         {
             RecruitsWindow.Close();
             RecruitsWindow.Map.Close();
+        }
+
+        private void helpButton_Click(object sender, EventArgs e)
+        {
+            HelpForm helpForm = new HelpForm();
+            helpForm.ShowDialog();
         }
     }
 }

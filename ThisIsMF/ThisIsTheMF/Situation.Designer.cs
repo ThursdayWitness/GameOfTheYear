@@ -40,36 +40,40 @@ namespace ThisIsTheMF
             // descriptionText
             // 
             this.descriptionText.AutoSize = true;
-            this.descriptionText.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (204)));
-            this.descriptionText.Location = new System.Drawing.Point(12, 9);
-            this.descriptionText.MaximumSize = new System.Drawing.Size(500, 0);
+            this.descriptionText.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.descriptionText.Location = new System.Drawing.Point(14, 12);
+            this.descriptionText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.descriptionText.MaximumSize = new System.Drawing.Size(583, 0);
             this.descriptionText.Name = "descriptionText";
-            this.descriptionText.Size = new System.Drawing.Size(46, 45);
+            this.descriptionText.Size = new System.Drawing.Size(49, 48);
             this.descriptionText.TabIndex = 0;
             this.descriptionText.Text = "hi";
             // 
             // MainStudentBox
             // 
             this.MainStudentBox.FormattingEnabled = true;
-            this.MainStudentBox.Location = new System.Drawing.Point(12, 57);
+            this.MainStudentBox.Location = new System.Drawing.Point(14, 75);
+            this.MainStudentBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MainStudentBox.Name = "MainStudentBox";
-            this.MainStudentBox.Size = new System.Drawing.Size(121, 21);
+            this.MainStudentBox.Size = new System.Drawing.Size(140, 25);
             this.MainStudentBox.TabIndex = 1;
             this.MainStudentBox.SelectionChangeCommitted += new System.EventHandler(this.MainStudentSelected);
             // 
             // MainStudentLabel
             // 
-            this.MainStudentLabel.Location = new System.Drawing.Point(12, 92);
+            this.MainStudentLabel.Location = new System.Drawing.Point(14, 120);
+            this.MainStudentLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MainStudentLabel.Name = "MainStudentLabel";
-            this.MainStudentLabel.Size = new System.Drawing.Size(100, 23);
+            this.MainStudentLabel.Size = new System.Drawing.Size(117, 30);
             this.MainStudentLabel.TabIndex = 2;
             this.MainStudentLabel.Text = "label1";
             // 
             // HelperLabel
             // 
-            this.HelperLabel.Location = new System.Drawing.Point(12, 115);
+            this.HelperLabel.Location = new System.Drawing.Point(14, 150);
+            this.HelperLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.HelperLabel.Name = "HelperLabel";
-            this.HelperLabel.Size = new System.Drawing.Size(100, 23);
+            this.HelperLabel.Size = new System.Drawing.Size(117, 30);
             this.HelperLabel.TabIndex = 3;
             this.HelperLabel.Text = "label1";
             this.HelperLabel.Visible = false;
@@ -77,18 +81,20 @@ namespace ThisIsTheMF
             // HelperStudent
             // 
             this.HelperStudent.FormattingEnabled = true;
-            this.HelperStudent.Location = new System.Drawing.Point(139, 57);
+            this.HelperStudent.Location = new System.Drawing.Point(162, 75);
+            this.HelperStudent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HelperStudent.Name = "HelperStudent";
-            this.HelperStudent.Size = new System.Drawing.Size(121, 21);
+            this.HelperStudent.Size = new System.Drawing.Size(140, 25);
             this.HelperStudent.TabIndex = 4;
             this.HelperStudent.Visible = false;
             // 
             // SendTroops
             // 
             this.SendTroops.AutoSize = true;
-            this.SendTroops.Location = new System.Drawing.Point(291, 136);
+            this.SendTroops.Location = new System.Drawing.Point(466, 282);
+            this.SendTroops.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SendTroops.Name = "SendTroops";
-            this.SendTroops.Size = new System.Drawing.Size(120, 23);
+            this.SendTroops.Size = new System.Drawing.Size(140, 30);
             this.SendTroops.TabIndex = 5;
             this.SendTroops.Text = "Отправить бедолагу";
             this.SendTroops.UseVisualStyleBackColor = true;
@@ -96,9 +102,9 @@ namespace ThisIsTheMF
             // 
             // Situation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(586, 289);
+            this.ClientSize = new System.Drawing.Size(684, 378);
             this.Controls.Add(this.SendTroops);
             this.Controls.Add(this.HelperStudent);
             this.Controls.Add(this.HelperLabel);
@@ -106,11 +112,12 @@ namespace ThisIsTheMF
             this.Controls.Add(this.MainStudentBox);
             this.Controls.Add(this.descriptionText);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Situation";
             this.Text = "Situation";
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         private System.Windows.Forms.Button SendTroops;

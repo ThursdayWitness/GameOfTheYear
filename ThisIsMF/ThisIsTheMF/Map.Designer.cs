@@ -31,12 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Map));
             this.dialogEvent = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnSettings = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panelNews = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panelStudents = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
@@ -50,86 +44,26 @@
             this.pictureMap = new System.Windows.Forms.PictureBox();
             this.timerEvent = new System.Windows.Forms.Timer(this.components);
             this.timerStartSession = new System.Windows.Forms.Timer(this.components);
+            this.panelNews = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dialogEvent)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panelNews.SuspendLayout();
             this.panelStudents.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMap)).BeginInit();
+            this.panelNews.SuspendLayout();
             this.SuspendLayout();
             // 
             // dialogEvent
             // 
             this.dialogEvent.BackColor = System.Drawing.Color.Transparent;
             this.dialogEvent.Image = ((System.Drawing.Image)(resources.GetObject("dialogEvent.Image")));
-            this.dialogEvent.Location = new System.Drawing.Point(561, 137);
+            this.dialogEvent.Location = new System.Drawing.Point(393, 182);
             this.dialogEvent.Name = "dialogEvent";
             this.dialogEvent.Size = new System.Drawing.Size(160, 160);
             this.dialogEvent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.dialogEvent.TabIndex = 5;
             this.dialogEvent.TabStop = false;
             this.dialogEvent.Click += new System.EventHandler(this.dialogEvent_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(184)))), ((int)(((byte)(127)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.btnSettings);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(275, 39);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(409, 56);
-            this.panel1.TabIndex = 9;
-            // 
-            // btnSettings
-            // 
-            this.btnSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(184)))), ((int)(((byte)(127)))));
-            this.btnSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnSettings.Image")));
-            this.btnSettings.Location = new System.Drawing.Point(361, -1);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(47, 56);
-            this.btnSettings.TabIndex = 2;
-            this.btnSettings.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Montserrat", 18.33962F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(126, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 37);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "#";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 18.33962F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(8, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 37);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Неделя";
-            // 
-            // panelNews
-            // 
-            this.panelNews.Controls.Add(this.textBox1);
-            this.panelNews.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelNews.Location = new System.Drawing.Point(1239, 0);
-            this.panelNews.Name = "panelNews";
-            this.panelNews.Size = new System.Drawing.Size(249, 743);
-            this.panelNews.TabIndex = 8;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(0, 216);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(236, 25);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TabStop = false;
             // 
             // panelStudents
             // 
@@ -163,7 +97,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(251, 32);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Ум - способность студента справиться с заданиями о теме предмета.\r\n";
+            this.label4.Text = "Ум - способность студента справиться с заданиями о теме предмета";
             // 
             // label6
             // 
@@ -251,13 +185,29 @@
             this.timerEvent.Interval = 1000;
             this.timerEvent.Tick += new System.EventHandler(this.timerEvent_Tick);
             // 
+            // panelNews
+            // 
+            this.panelNews.Controls.Add(this.textBox1);
+            this.panelNews.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelNews.Location = new System.Drawing.Point(1239, 0);
+            this.panelNews.Name = "panelNews";
+            this.panelNews.Size = new System.Drawing.Size(249, 743);
+            this.panelNews.TabIndex = 8;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Location = new System.Drawing.Point(0, 0);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(249, 33);
+            this.textBox1.TabIndex = 0;
+            // 
             // Map
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1488, 743);
             this.Controls.Add(this.dialogEvent);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelNews);
             this.Controls.Add(this.panelStudents);
             this.Controls.Add(this.pictureMap);
@@ -266,14 +216,12 @@
             this.Text = "Map";
             this.Load += new System.EventHandler(this.Map_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dialogEvent)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panelNews.ResumeLayout(false);
-            this.panelNews.PerformLayout();
             this.panelStudents.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMap)).EndInit();
+            this.panelNews.ResumeLayout(false);
+            this.panelNews.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -281,16 +229,10 @@
         #endregion
 
         private System.Windows.Forms.PictureBox dialogEvent;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnSettings;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panelNews;
         private System.Windows.Forms.Panel panelStudents;
         private System.Windows.Forms.PictureBox pictureMap;
         private System.Windows.Forms.Timer timerEvent;
         private System.Windows.Forms.Timer timerStartSession;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label4;
@@ -300,5 +242,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Panel panelNews;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

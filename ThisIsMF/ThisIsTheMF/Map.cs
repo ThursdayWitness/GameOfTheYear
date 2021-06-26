@@ -113,22 +113,22 @@ namespace ThisIsTheMF
             switch (randomItem)
             {
                 case "matfuck":
-                    CreateEvent(418, 146);
+                    CreateEvent(433, 158);
                     CreateEvents();
                     CreateEventAsync();
                     break;
                 case "socgum":
-                    CreateEvent(564, 92);
+                    CreateEvent(604, 103);
                     CreateEvents();
                     CreateEventAsync();
                     break;
                 case "sok":
-                    CreateEvent(382, 154);
+                    CreateEvent(393, 182);
                     CreateEvents();
                     CreateEventAsync();
                     break;
                 case "ipip":
-                    CreateEvent(547, 500);
+                    CreateEvent(567, 545);
                     CreateEvents();
                     CreateEventAsync();
                     break;
@@ -166,10 +166,10 @@ namespace ThisIsTheMF
             await Task.Delay(10000);
         }
 
-        //string text = "Ивашко заебал Ивашко заебал           Ивашко заебал           Ивашко сайпал";
+        //string text = "";
         private void timerEvent_Tick(object sender, EventArgs e)
         {
-            //text = text.Substring(3) + text[0];
+            //text = text.Substring(2) + text[0];
             //textBox1.Text = text;
         }
 
