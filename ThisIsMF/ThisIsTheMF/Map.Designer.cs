@@ -45,12 +45,10 @@
             this.timerEvent = new System.Windows.Forms.Timer(this.components);
             this.timerStartSession = new System.Windows.Forms.Timer(this.components);
             this.panelNews = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dialogEvent)).BeginInit();
             this.panelStudents.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMap)).BeginInit();
-            this.panelNews.SuspendLayout();
             this.SuspendLayout();
             // 
             // dialogEvent
@@ -161,9 +159,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(50, 297);
+            this.button1.Font = new System.Drawing.Font("Montserrat", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(29, 297);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(154, 31);
+            this.button1.Size = new System.Drawing.Size(200, 31);
             this.button1.TabIndex = 1;
             this.button1.Text = "Показать подсказки";
             this.button1.UseVisualStyleBackColor = true;
@@ -187,20 +186,11 @@
             // 
             // panelNews
             // 
-            this.panelNews.Controls.Add(this.textBox1);
             this.panelNews.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelNews.Location = new System.Drawing.Point(1239, 0);
             this.panelNews.Name = "panelNews";
             this.panelNews.Size = new System.Drawing.Size(249, 743);
             this.panelNews.TabIndex = 8;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Montserrat", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(249, 33);
-            this.textBox1.TabIndex = 0;
             // 
             // Map
             // 
@@ -220,8 +210,6 @@
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureMap)).EndInit();
-            this.panelNews.ResumeLayout(false);
-            this.panelNews.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -243,6 +231,5 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panelNews;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }

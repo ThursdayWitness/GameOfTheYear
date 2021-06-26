@@ -263,13 +263,6 @@
 Достаточное кол-во успешно выполненных миссий приведёт игрока к завершению курса
 (хорошей концовке). В ином случае — к отчислению (проигрышу).</value>
   </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>«‎Ум»‎ - способность студента справиться с заданиями о теме предмета
-«‎Красноречие»‎ - шанс избежать негативных последствий при провале
-«Дерзость‎»‎ - повышает шанс успеха на задании даже при нехватки определенных навыков
-«‎Сочувствие»‎ - помощник может добавить половину соответствующей характеристики
-в соответствии с требованиями миссии</value>
-  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing.Common" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAYAAAAAAAEAIACu3QAAZgAAAICAAAABACAAKAgBABTeAABAQAAAAQAgAChCAAA85gEAMDAAAAEA

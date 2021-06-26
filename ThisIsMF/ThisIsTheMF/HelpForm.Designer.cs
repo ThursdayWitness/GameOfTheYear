@@ -83,7 +83,7 @@ namespace ThisIsTheMF
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(5, 194);
+            this.panel1.Location = new System.Drawing.Point(5, 230);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(749, 153);
             this.panel1.TabIndex = 4;
@@ -93,7 +93,7 @@ namespace ThisIsTheMF
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(5, 12);
+            this.panel2.Location = new System.Drawing.Point(5, 48);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(749, 176);
             this.panel2.TabIndex = 5;
@@ -123,9 +123,9 @@ namespace ThisIsTheMF
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Location = new System.Drawing.Point(5, 353);
+            this.panel3.Location = new System.Drawing.Point(5, 389);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(749, 153);
+            this.panel3.Size = new System.Drawing.Size(749, 80);
             this.panel3.TabIndex = 4;
             // 
             // label5
@@ -134,9 +134,10 @@ namespace ThisIsTheMF
             this.label5.Font = new System.Drawing.Font("Montserrat", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(11, 42);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(729, 105);
+            this.label5.Size = new System.Drawing.Size(712, 21);
             this.label5.TabIndex = 0;
-            this.label5.Text = resources.GetString("label5.Text");
+            this.label5.Text = "Сложность влияет на количество проваленных миссий, после которых игра завершается" +
+    ".";
             // 
             // label6
             // 
@@ -144,15 +145,15 @@ namespace ThisIsTheMF
             this.label6.Font = new System.Drawing.Font("Montserrat ExtraBold", 14.26415F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(11, 10);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(194, 29);
+            this.label6.Size = new System.Drawing.Size(190, 29);
             this.label6.TabIndex = 0;
-            this.label6.Text = "про параметры";
+            this.label6.Text = "про сложность";
             // 
             // HelpForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1443, 645);
+            this.ClientSize = new System.Drawing.Size(1443, 542);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
